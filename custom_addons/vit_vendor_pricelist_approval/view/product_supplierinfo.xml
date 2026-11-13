@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="product_supplierinfo_tree_view_inherit_pricelist_approval" model="ir.ui.view">
+        <field name="name">product.supplierinfo.tree.pricelist.approval</field>
+        <field name="model">product.supplierinfo</field>
+        <field name="inherit_id" ref="product.product_supplierinfo_tree_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='price']" position="after">
+                <field name="approval_state" widget="badge"
+                       decoration-info="approval_state == 'draft'"
+                       decoration-warning="approval_state == 'to_approve'"
+                       decoration-success="approval_state == 'approved'"
+                       decoration-danger="approval_state == 'rejected'"
+                       optional="show"/>
+                <field name="pricelist_approval_id" optional="show"/>
+                <field name="active" column_invisible="True"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="product_supplierinfo_search_view_inherit_pricelist_approval" model="ir.ui.view">
+        <field name="name">product.supplierinfo.search.pricelist.approval</field>
+        <field name="model">product.supplierinfo</field>
+        <field name="inherit_id" ref="product.product_supplierinfo_search_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//search" position="inside">
+                <separator/>
+                <filter string="Menunggu Approval" name="waiting_approval"
+                        domain="[('active', '=', False), ('approval_state', 'in', ('draft', 'to_approve'))]"/>
+                <filter string="Archived" name="inactive"
+                        domain="[('active', '=', False)]"/>
+                <group expand="0" string="Group By">
+                    <filter string="Status Approval" name="group_by_approval_state"
+                            context="{'group_by': 'approval_state'}"/>
+                    <filter string="Dokumen Approval" name="group_by_pricelist_approval"
+                            context="{'group_by': 'pricelist_approval_id'}"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

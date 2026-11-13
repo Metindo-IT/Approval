@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="sign.SignTemplateSidebar">
+        <div t-attf-class="o_sign_sidebar {{ isSidebarHidden ? 'd-none' : ''}} w-100 pt-3">
+            <div class="px-3">
+                <div class="o_sign_template_header_document_name align-items-center d-flex me-auto mb-3">
+                    <input type="text" class="o_sign_template_name_input o_input form-control bg-transparent rounded-0"
+                        t-att-value="state.templateName"
+                        t-att-disabled="props.hasSignRequests"
+                        t-on-change="ev => this.onTemplateNameChanged(ev)"
+                        t-on-mouseleave="ev => this.updateShowEditNameIcon(ev, false)"/>
+                    <i class="fa fa-pencil"/>
+                    <span>.pdf</span>
+                </div>
+
+                <t t-foreach="props.signers" t-as="signer" t-key="signer.id">
+                    <SignTemplateSidebarRoleItems t-props="getSidebarRoleItemsProps(signer.id)"/>
+                </t>
+            </div>
+            <div class="o_sign_sidebar_add_button_container position-sticky bottom-0 p-3">
+                <button class="o_sign_sidebar_add_button btn btn-secondary w-100" title="Create a new signer for signing the fields" t-on-click="onClickAddSigner">
+                    <i class="fa fa-plus mx-1"/>Add signer
+                </button>
+            </div>
+        </div>
+    </t>
+</templates>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <template id="portal_my_details" inherit_id="portal.portal_my_details">
+        <div name="address_details" position="inside">
+            <div class="mb-1 col-xl-6">
+                <label
+                    class="col-form-label label-optional"
+                    for="property_ups_carrier_account"
+                >
+                    UPS Number Account
+                </label>
+                <input
+                    type="text"
+                    name="property_ups_carrier_account"
+                    t-attf-class="form-control"
+                    t-att-value="partner_sudo.property_ups_carrier_account"
+                />
+            </div>
+        </div>
+    </template>
+
+</odoo>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_dinas_luar_form" model="ir.ui.view">
+            <field name="name">dinas.luar.form</field>
+            <field name="model">dinas.luar</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="action_approve" type="object" string="Approve" invisible="state != 'draft'" class="oe_highlight"/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button name="action_view_expenses" type="object" class="oe_stat_button" icon="fa-money" invisible="state == 'draft'">
+                                <field name="expense_count" widget="statinfo" string="Reimbursements"/>
+                            </button>
+                        </div>
+                        <div class="oe_title">
+                            <h1><field name="name" placeholder="Tujuan Dinas..."/></h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="employee_id"/>
+                                <field name="start_date"/>
+                                <field name="end_date"/>
+                            </group>
+                            <group>
+                                <field name="use_company_vehicle"/>
+                                <field name="vehicle_id" invisible="not use_company_vehicle" required="use_company_vehicle"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Daftar Pengeluaran" invisible="state == 'draft'">
+                                <field name="expense_ids" readonly="1">
+                                    <list>
+                                        <field name="name"/>
+                                        <field name="state"/>
+                                    </list>
+                                </field>
+                            </page>
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_dinas_luar" model="ir.actions.act_window">
+            <field name="name">Dinas Luar</field>
+            <field name="res_model">dinas.luar</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+        <menuitem id="menu_dinas_luar_root" name="Dinas Luar" sequence="10"/>
+        <menuitem id="menu_dinas_luar" name="Pengajuan" parent="menu_dinas_luar_root" action="action_dinas_luar"/>
+    </data>
+</odoo>

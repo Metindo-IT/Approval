@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Wizard Reject -->
+    <record id="view_vendor_pricelist_reject_wizard_form" model="ir.ui.view">
+        <field name="name">vendor.pricelist.reject.wizard.form</field>
+        <field name="model">vendor.pricelist.reject.wizard</field>
+        <field name="arch" type="xml">
+            <form string="Alasan Reject Pricelist">
+                <group>
+                    <field name="approval_id" invisible="1"/>
+                    <field name="reason" placeholder="Tuliskan alasan penolakan..."/>
+                </group>
+                <footer>
+                    <button name="action_confirm_reject" string="Reject" type="object" class="btn-danger"/>
+                    <button string="Batal" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <!-- List View -->
+    <record id="view_vendor_pricelist_approval_list" model="ir.ui.view">
+        <field name="name">vendor.pricelist.approval.list</field>
+        <field name="model">vendor.pricelist.approval</field>
+        <field name="arch" type="xml">
+            <list string="Vendor Pricelist Approval">
+                <field name="name" decoration-bf="1"/>
+                <field name="category_id"/>
+                <field name="partner_ids" widget="many2many_tags"/>
+                <field name="user_id"/>
+                <field name="submit_date"/>
+                <field name="stage_deadline"/>
+                <field name="state" widget="badge"
+                       decoration-info="state == 'draft'"
+                       decoration-warning="state in ('approval_1', 'approval_2', 'approval_3')"
+                       decoration-success="state == 'approved'"
+                       decoration-danger="state == 'rejected'"/>
+            </list>
+        </field>
+    </record>
+
+    <!-- Form View -->
+    <record id="view_vendor_pricelist_approval_form" model="ir.ui.view">
+        <field name="name">vendor.pricelist.approval.form</field>
+        <field name="model">vendor.pricelist.approval</field>
+        <field name="arch" type="xml">
+            <form string="Vendor Pricelist Approval">
+                <header>
+                    <field name="can_approve" invisible="1"/>
+                    <button name="action_submit" string="Submit" type="object"
+                            class="btn-primary" invisible="state != 'draft'"/>
+                    <button name="action_approve" string="Approve" type="object"
+                            class="btn-success" invisible="not can_approve"/>
+                    <button name="action_reject" string="Reject" type="object"
+                            class="btn-danger" invisible="not can_approve"/>
+                    <field name="state" widget="statusbar"
+                           statusbar_visible="draft,approval_1,approval_2,approval_3,approved"/>
+                </header>
+                <sheet>
+                    <div class="oe_button_box" name="button_box">
+                        <button name="action_view_affected_bills"
+                                type="object"
+                                class="oe_stat_button"
+                                icon="fa-file-text-o"
+                                invisible="state != 'approved' or affected_bill_count == 0">
+                            <field name="affected_bill_count" widget="statinfo" string="Bill Terdampak"/>
+                        </button>
+                    </div>
+                    <div class="oe_title">
+                        <h1>
+                            <field name="name"/>
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <field name="category_id" readonly="state != 'draft'"/>
+                            <field name="partner_ids" widget="many2many_tags" readonly="1"/>
+                        </group>
+                        <group>
+                            <field name="user_id"/>
+                            <field name="submit_date" invisible="not submit_date"/>
+                            <field name="stage_deadline" invisible="not stage_deadline"/>
+                            <field name="company_id" groups="base.group_multi_company"/>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Harga Vendor" name="prices">
+                            <field name="supplierinfo_ids"
+                                   readonly="state != 'draft'"
+                                   context="{'active_test': False, 'default_active': False, 'default_approval_state': 'draft', 'pricelist_approval_write': True}">
+                                <list editable="bottom">
+                                    <field name="partner_id"/>
+                                    <field name="product_id" optional="show"/>
+                                    <field name="product_tmpl_id"/>
+                                    <field name="min_qty" optional="show"/>
+                                    <field name="product_uom_id" groups="uom.group_uom"/>
+                                    <field name="date_start" required="1"/>
+                                    <field name="date_end" optional="show"/>
+                                    <field name="old_price" readonly="1"/>
+                                    <field name="price"/>
+                                    <field name="price_diff_pct" readonly="1"/>
+                                    <field name="currency_id" groups="base.group_multi_currency"/>
+                                    <field name="approval_state" widget="badge" readonly="1"
+                                           decoration-info="approval_state == 'draft'"
+                                           decoration-warning="approval_state == 'to_approve'"
+                                           decoration-success="approval_state == 'approved'"
+                                           decoration-danger="approval_state == 'rejected'"/>
+                                </list>
+                            </field>
+                        </page>
+                        <page string="Approval" name="approvals">
+                            <field name="line_ids" readonly="1">
+                                <list>
+                                    <field name="stage"/>
+                                    <field name="user_id"/>
+                                    <field name="role"/>
+                                    <field name="state" widget="badge"
+                                           decoration-warning="state == 'pending'"
+                                           decoration-success="state == 'approved'"
+                                           decoration-danger="state == 'rejected'"/>
+                                    <field name="date"/>
+                                    <field name="note"/>
+                                </list>
+                            </field>
+                        </page>
+                    </notebook>
+                </sheet>
+                <chatter/>
+            </form>
+        </field>
+    </record>
+
+    <!-- Search View -->
+    <record id="view_vendor_pricelist_approval_search" model="ir.ui.view">
+        <field name="name">vendor.pricelist.approval.search</field>
+        <field name="model">vendor.pricelist.approval</field>
+        <field name="arch" type="xml">
+            <search string="Cari Pricelist Approval">
+                <field name="name"/>
+                <field name="category_id"/>
+                <field name="partner_ids"/>
+                <field name="user_id"/>
+                <filter string="Menunggu Saya" name="waiting_for_me"
+                        domain="[('state', 'in', ('approval_1', 'approval_2', 'approval_3')), ('line_ids.user_id', '=', uid), ('line_ids.state', '=', 'pending')]"/>
+                <filter string="Dokumen Saya" name="my_documents"
+                        domain="[('user_id', '=', uid)]"/>
+                <separator/>
+                <filter string="Draft" name="state_draft" domain="[('state', '=', 'draft')]"/>
+                <filter string="Waiting Approval" name="state_waiting"
+                        domain="[('state', 'in', ('approval_1', 'approval_2', 'approval_3'))]"/>
+                <filter string="Approved" name="state_approved" domain="[('state', '=', 'approved')]"/>
+                <filter string="Lewat Batas Waktu" name="overdue"
+                        domain="[('state', 'in', ('approval_1', 'approval_2', 'approval_3')), ('stage_deadline', '&lt;', context_today().strftime('%Y-%m-%d'))]"/>
+                <group expand="0" string="Group By">
+                    <filter string="Kategori" name="group_by_category" context="{'group_by': 'category_id'}"/>
+                    <filter string="Status" name="group_by_state" context="{'group_by': 'state'}"/>
+                    <filter string="Dibuat Oleh" name="group_by_user" context="{'group_by': 'user_id'}"/>
+                </group>
+            </search>
+        </field>
+    </record>
+
+    <!-- Actions & Menus -->
+    <record id="action_vendor_pricelist_approval_all" model="ir.actions.act_window">
+        <field name="name">Pricelist Approval</field>
+        <field name="res_model">vendor.pricelist.approval</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="view_vendor_pricelist_approval_search"/>
+        <field name="context">{}</field>
+    </record>
+
+    <record id="action_vendor_pricelist_approval_waiting_me" model="ir.actions.act_window">
+        <field name="name">Menunggu Approval Saya</field>
+        <field name="res_model">vendor.pricelist.approval</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="view_vendor_pricelist_approval_search"/>
+        <field name="context">{'search_default_waiting_for_me': 1}</field>
+    </record>
+
+    <record id="action_vendor_pricelist_approval_overdue" model="ir.actions.act_window">
+        <field name="name">Lewat Batas Waktu</field>
+        <field name="res_model">vendor.pricelist.approval</field>
+        <field name="view_mode">list,form</field>
+        <field name="search_view_id" ref="view_vendor_pricelist_approval_search"/>
+        <field name="context">{'search_default_overdue': 1}</field>
+    </record>
+
+    <menuitem id="menu_vendor_pricelist_approval_root"
+              name="Pricelist Approval"
+              parent="purchase.menu_purchase_products"
+              sequence="30"/>
+
+    <menuitem id="menu_vendor_pricelist_approval_all"
+              name="Semua Dokumen"
+              parent="menu_vendor_pricelist_approval_root"
+              action="action_vendor_pricelist_approval_all"
+              sequence="10"/>
+
+    <menuitem id="menu_vendor_pricelist_approval_waiting_me"
+              name="Menunggu Saya"
+              parent="menu_vendor_pricelist_approval_root"
+              action="action_vendor_pricelist_approval_waiting_me"
+              sequence="20"/>
+
+    <menuitem id="menu_vendor_pricelist_approval_overdue"
+              name="Lewat Batas Waktu"
+              parent="menu_vendor_pricelist_approval_root"
+              action="action_vendor_pricelist_approval_overdue"
+              sequence="30"/>
+</odoo>

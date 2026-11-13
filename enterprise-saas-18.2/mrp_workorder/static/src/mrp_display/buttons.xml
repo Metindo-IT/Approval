@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+    <t t-name="mrp_workorder.ShopFloorDialogButtons">
+        <div class="o_form_buttons_edit d-flex gap-1">
+            <button type="button" class="btn btn-primary o_form_button_save" data-hotkey="s" barcode_trigger="NEXT" t-on-click.stop="nextPressed">
+                <t t-if="props.openNextCheck">Next</t><t t-else="">Save</t>
+            </button>
+        </div>
+        <div class="o_form_buttons_view justify-content-end">
+            <button t-if="props.openPreviousCheck" type="button" class="btn btn-secondary" barcode_trigger="PREV" t-on-click.stop="backPressed">
+                &lt; Back
+            </button>
+            <button t-if="props.openNextCheck" type="button" class="btn btn-secondary" barcode_trigger="SKIP" t-on-click.stop="skipPressed">
+                Skip &gt;
+            </button>
+        </div>
+    </t>
+</templates>

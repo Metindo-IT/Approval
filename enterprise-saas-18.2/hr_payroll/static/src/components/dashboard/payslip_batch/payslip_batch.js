@@ -1,0 +1,45 @@
+import { _t } from "@web/core/l10n/translation";
+import { useService } from "@web/core/utils/hooks";
+import { Component } from "@odoo/owl";
+
+export class PayrollDashboardPayslipBatch extends Component {
+    static template = "hr_payroll.PayslipBatch";
+    static props = ["batches"];
+
+    setup() {
+        this.actionService = useService("action");
+    }
+
+    /**
+     * Handles clicking on the title
+     */
+    onClickTitle() {
+        this.actionService.doAction('hr_payroll.action_hr_payslip_run_tree');
+    }
+
+    getColorFromState(state) {
+        const colorMap = {
+            New: "text-bg-info",
+            Confirmed: "text-bg-warning",
+            Done: "text-bg-success",
+            Paid: "text-bg-primary",
+        };
+        return colorMap[state] || "text-bg-info";
+    }
+
+    /**
+     * Handles clicking on the line
+     *
+     * @param {number} batchID
+     * @param {string} batchNames
+     */
+    onClickLine(batchID, batchName) {
+        this.actionService.doAction({
+            type: 'ir.actions.act_window',
+            name: _t('Employee Payslips'),
+            res_model: 'hr.payslip.run',
+            res_id: batchID,
+            views: [[false, 'form']],
+        });
+    }
+}

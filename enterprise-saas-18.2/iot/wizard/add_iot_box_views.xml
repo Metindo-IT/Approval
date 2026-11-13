@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_add_iot_box" model="ir.ui.view">
+        <field name="name">Add IoT box</field>
+        <field name="model">add.iot.box</field>
+        <field name="arch" type="xml">
+            <form string="Connect my IoT Box" js_class="add_iot_box_wizard">
+                <strong>
+                    Follow the instructions below to connect your IoT Box to your database
+                    <a href="//www.odoo.com/documentation/master/applications/general/iot/config/connect.html#connect-an-iot-box-to-odoo" target="_blank" class="fa fa-question-circle" invisible="use_token"/>
+                    <a href="//www.odoo.com/documentation/master/applications/general/iot/config/connect.html#manually-connecting-the-iot-box-using-the-token" target="_blank" class="fa fa-question-circle" invisible="not use_token"/>
+                </strong>
+                <br/><br/>
+                <div invisible="use_token">
+                    <ol>
+                        <li>
+                            Power on the IoT Box and connect it to the internet through ethernet
+                            <a href="//www.odoo.com/documentation/master/applications/general/iot/config/connect.html#ethernet-connection" target="_blank" class="fa fa-question-circle"/>
+                            or wifi
+                            <a href="//www.odoo.com/documentation/master/applications/general/iot/config/connect.html#wifi-connection" target="_blank" class="fa fa-question-circle"/>
+                        </li>
+                        <li>Read the pairing code from a display or thermal printer connected to the IoT Box. You can also find it on the IoT Box Homepage</li>
+                        <li>Enter the code below and click on "Connect"</li>
+                        <li>After some time the IoT Box should appear in the list along with the connected devices</li>
+                    </ol>
+                    <group class="col-md-8">
+                        <field name="pairing_code"/>
+                    </group>
+                    <group class="col-md-4">
+                        <button id="pair_button" class="btn btn-primary" type="object" name="box_pairing" string="Connect" invisible="use_token"/>
+                    </group>
+                </div>
+                <div invisible="not use_token">
+                    <ol>
+                        <li>Copy the token below</li>
+                        <li>While on the same network as the IoT Box, open a web browser and go to the IoT Box IP address</li>
+                        <li>In the "Server" section click on the "Configure" button</li>
+                        <li>Paste the token in the "Server token" field and click on "Connect"</li>
+                        <li>After some time the IoT Box should appear in the list along with the connected devices</li>
+                    </ol>
+                    <group>
+                        <field name="token" widget="CopyClipboardChar" readonly="1"/>
+                    </group>
+                </div>
+
+                <footer>
+                    <button class="btn btn-secondary" string="Close" data-hotkey="x" name="cancel" special="cancel"/>
+                    <button class="btn btn-secondary" string="Use another method" type="object" name="toggle_connection_method"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+    <record id="action_add_iot_box" model="ir.actions.act_window">
+        <field name="name">Connect my IoT Box</field>
+        <field name="res_model">add.iot.box</field>
+        <field name="view_mode">form</field>
+        <field name="view_id" ref="view_add_iot_box"/>
+        <field name="target">new</field>
+    </record>
+</odoo>

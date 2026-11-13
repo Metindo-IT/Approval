@@ -1,0 +1,1619 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_be_reports
+#
+# Translators:
+# Felix Schubert <felix.schubert@go-erp.com>, 2023
+# Friederike Fasterling-Nesselbosch, 2023
+# Martin Trigaux, 2023
+# Larissa Manderfeld, 2023
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.5alpha1+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-08-08 09:25+0000\n"
+"PO-Revision-Date: 2024-08-08 09:25+0000\n"
+"Last-Translator: Dylan Kiss <dyki@odoo.com>\n"
+"Language-Team: \n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.4.1\n"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_281_50_pdf
+msgid "(including amounts that are related to other taxable periods):"
+msgstr ""
+"tatsächlich gezahlten Betrag ein (einschließlich der Beträge, die sich auf "
+"andere Besteuerungszeiträume beziehen):"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_281_50_pdf
+msgid ""
+",\n"
+"                                                enter the amount actually paid in"
+msgstr ""
+",\n"
+"tragen Sie hier den"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_281_50_pdf
+msgid "0.00"
+msgstr ""
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_281_50_pdf
+msgid ""
+"0.00\n"
+"                                                <br/><br/>"
+msgstr ""
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "1. NN ou NE:"
+msgstr "1. NN oder UN:"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_281_50_pdf
+msgid "1. N°"
+msgstr "1. Nr."
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_281_50_pdf
+msgid "2. Name (or denomination) and address of the debtor of the income:"
+msgstr ""
+"2. Name (oder Bezeichnung) und Anschrift des Schuldners der Einkünfte:"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "2. Phone number:"
+msgstr "2. Telefonnummer:"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "281.10"
+msgstr ""
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "281.11"
+msgstr ""
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "281.12"
+msgstr ""
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "281.13"
+msgstr ""
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "281.14"
+msgstr ""
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "281.15"
+msgstr ""
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "281.16"
+msgstr ""
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "281.17"
+msgstr ""
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "281.18"
+msgstr ""
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "281.20"
+msgstr ""
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "281.30"
+msgstr ""
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.form_281_50_view_form
+msgid "281.50 Form"
+msgstr "Karte 281.50"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.form_325_view_form
+msgid "281.50 Forms"
+msgstr "Karten 281.50"
+
+#. module: l10n_be_reports
+#: model:ir.actions.report,name:l10n_be_reports.action_report_partner_281_50_pdf
+msgid "281.50 PDF"
+msgstr "281.50 PDF"
+
+#. module: l10n_be_reports
+#: model:ir.actions.report,name:l10n_be_reports.action_report_partner_281_50_xml
+msgid "281.50 XML"
+msgstr "281.50 XML"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_res_partner__forms_281_50
+#: model:ir.model.fields,field_description:l10n_be_reports.field_res_users__forms_281_50
+msgid "281.50 forms"
+msgstr "Karten 281.50"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "3. Identity of the debtor of the income"
+msgstr "3. Identität des Schuldners der Einkünfte"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_281_50_pdf
+msgid "3. Nature"
+msgstr "3. Art"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.form_325_view_form
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.form_325_view_tree
+msgid "325 Form"
+msgstr "Verzeichnis 325"
+
+#. module: l10n_be_reports
+#: model:ir.model,name:l10n_be_reports.model_l10n_be_form_325_wizard
+msgid "325 Form Wizard"
+msgstr "Verzeichnis 325 Assistent"
+
+#. module: l10n_be_reports
+#: model:ir.actions.report,name:l10n_be_reports.action_report_325_form_pdf
+msgid "325 PDF"
+msgstr "325 PDF"
+
+#. module: l10n_be_reports
+#: model:ir.actions.act_window,name:l10n_be_reports.action_open_325_tree_view
+msgid "325 forms"
+msgstr "Verzeichnisse 325"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_281_50_pdf
+msgid "4. Comments:"
+msgstr "4. Kommentar:"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid ""
+"4. Domicile (natural persons), registered office or main administrative\n"
+"                                                office (companies and other institutions)"
+msgstr ""
+"4. Wohnsitz (natürliche Personen), Gesellschaftssitz oder Hauptniederlassung"
+" (Gesellschaften und andere Einrichtungen):"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid ""
+"5. Administrative or operating headquarters (companies and other\n"
+"                                                institutions)\n"
+"                                                or operating headquarters (natural persons who have more than one such\n"
+"                                                headquarters) when it is a statement specific to that administrative or\n"
+"                                                operating headquarters:"
+msgstr ""
+"5. Verwaltungs- oder Betriebssitz (Gesellschaften und andere Einrichtungen) "
+"oder Betriebssitz (natürliche Personen die über mehrere solcher Sitze "
+"verfügen), wenn es sich um ein Verzeichnis dieses Verwaltungs- oder "
+"Betriebssitzes handelt:"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "AMOUNT TOTAL"
+msgstr "GESAMTBETRAG"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__atn
+msgid "ATN"
+msgstr "VJA"
+
+#. module: l10n_be_reports
+#: model:ir.model,name:l10n_be_reports.model_account_chart_template
+msgid "Account Chart Template"
+msgstr "Kontenplan"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__message_needaction
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__message_needaction
+msgid "Action Needed"
+msgstr "Aktion erforderlich"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields.selection,name:l10n_be_reports.selection__l10n_be_form_325__treatment_type__2
+#: model:ir.model.fields.selection,name:l10n_be_reports.selection__l10n_be_form_325_wizard__treatment_type__2
+msgid "Add"
+msgstr "Hinzufügen"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__partner_address
+msgid "Address"
+msgstr "Adresse"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_281_50__partner_address
+msgid "Address of the partner when the form was created"
+msgstr "Adresse des Partners bei der Erstellung der Karte"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_281_50_pdf
+msgid "Amount"
+msgstr "Betrag"
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/account_general_ledger.py:0
+msgid "Annual Accounts"
+msgstr "Jahresabschluss"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_reports_periodic_vat_xml_export__ask_payment
+msgid "Ask Payment"
+msgstr "Zahlung verlangen"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_reports_periodic_vat_xml_export__ask_restitution
+msgid "Ask Restitution"
+msgstr "Rückerstattung verlangen"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.pdf_export_filters
+msgid "Ask payment:"
+msgstr "Zahlung verlangen:"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.pdf_export_filters
+msgid "Ask restitution:"
+msgstr "Rückerstattung verlangen:"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__message_attachment_count
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__message_attachment_count
+msgid "Attachment Count"
+msgstr "Anzahl Anhänge"
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/account_sales_report.py:0
+#: code:addons/l10n_be_reports/models/partner_vat_listing.py:0
+msgid "Audit"
+msgstr "Prüfung"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__partner_bce_number
+msgid "BCE number"
+msgstr "Unternehmensnummer"
+
+#. module: l10n_be_reports
+#: model:ir.model,name:l10n_be_reports.model_l10n_be_ec_sales_report_handler
+msgid "Belgian EC Sales Report Custom Handler"
+msgstr ""
+
+#. module: l10n_be_reports
+#: model:ir.model,name:l10n_be_reports.model_l10n_be_reports_periodic_vat_xml_export
+msgid "Belgian Periodic VAT Report Export Wizard"
+msgstr "Belgischer Assistent für den Export periodischer MwSt.-Berichte"
+
+#. module: l10n_be_reports
+#: model:ir.model,name:l10n_be_reports.model_l10n_be_tax_report_handler
+msgid "Belgian Tax Report Custom Handler"
+msgstr ""
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "CERTIFIED AS ACCURATE"
+msgstr "FÜR RICHTIG ERKLÄRT"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_reports_periodic_vat_xml_export__calling_export_wizard_id
+msgid "Calling Export Wizard"
+msgstr ""
+
+#. module: l10n_be_reports
+#: model:ir.model.fields.selection,name:l10n_be_reports.selection__l10n_be_form_325__treatment_type__3
+#: model:ir.model.fields.selection,name:l10n_be_reports.selection__l10n_be_form_325_wizard__treatment_type__3
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.view_account_financial_report_export
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_50_divider_pdf
+msgid "Carry over from the previous divider"
+msgstr "Übertrag des vorangehenden Zwischenblatts"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.view_account_financial_report_export
+msgid "Choose option(s) before exporting XML:"
+msgstr "Wählen Sie die Option(en) vor dem Export von XML:"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_res_partner__citizen_identification
+#: model:ir.model.fields,field_description:l10n_be_reports.field_res_users__citizen_identification
+msgid "Citizen Identification"
+msgstr "Nationale Nummer"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__partner_citizen_identification
+msgid "Citizen identification number"
+msgstr "Nationale Nummer"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__partner_city
+msgid "City"
+msgstr "Stadt"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_281_50__partner_city
+msgid "City of the partner when the form was created"
+msgstr "Gemeinde des Partners zum Zeitpunkt der Erstellung der Karte"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_reports_periodic_vat_xml_export__client_nihil
+msgid "Client Nihil"
+msgstr "Nihil-Erklärung"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.pdf_export_filters
+msgid "Client nihil:"
+msgstr "Nihil-Erklärung:"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.form_325_wizard_view_form
+msgid "Close"
+msgstr "Schließen"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_reports_periodic_vat_xml_export__comment
+msgid "Comment"
+msgstr "Bemerkungen"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_50_divider_pdf
+msgid "Comments"
+msgstr "Kommentare"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__commissions
+msgid "Commissions"
+msgstr "Provisionen"
+
+#. module: l10n_be_reports
+#: model:ir.model,name:l10n_be_reports.model_res_company
+msgid "Companies"
+msgstr "Unternehmen"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__company_id
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325_wizard__company_id
+msgid "Company"
+msgstr "Unternehmen"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "Company name or exact name (companies and other institutions)"
+msgstr ""
+"Firma oder genaue Bezeichnung (Gesellschaften und andere Einrichtungen)"
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/account_report.py:0
+msgid "Company: %s"
+msgstr "Unternehmen: %s"
+
+#. module: l10n_be_reports
+#: model:ir.model,name:l10n_be_reports.model_res_partner
+msgid "Contact"
+msgstr "Kontakt"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_reports_periodic_vat_xml_export__control_value
+msgid "Control Value"
+msgstr "Kontrollwert"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__country_id
+msgid "Country"
+msgstr "Land"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_281_50__country_id
+msgid "Country of the partner when the form was created"
+msgstr "Land des Partners zum Zeitpunkt der Erstellung der Karte"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.form_325_wizard_view_form
+msgid "Create 325 Form"
+msgstr "Verzeichnis 325 erstellen"
+
+#. module: l10n_be_reports
+#: model:ir.actions.act_window,name:l10n_be_reports.action_open_create_325_form
+#: model:ir.ui.menu,name:l10n_be_reports.menu_action_create_325_form
+msgid "Create 325 form"
+msgstr "Verzeichnis 325 erstellen"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__create_uid
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__create_uid
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325_wizard__create_uid
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_reports_periodic_vat_xml_export__create_uid
+msgid "Created by"
+msgstr "Erstellt von"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__create_date
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__create_date
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325_wizard__create_date
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_reports_periodic_vat_xml_export__create_date
+msgid "Created on"
+msgstr "Erstellt am"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__currency_id
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__currency_id
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_reports_periodic_vat_xml_export__currency_id
+msgid "Currency"
+msgstr "Währung"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "DESIGNATION OF THE FORMS"
+msgstr "BEZEICHNUNG DER KARTEN"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__debtor_id
+msgid "Debtor"
+msgstr "Debitor"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__debtor_address
+msgid "Debtor Address"
+msgstr "Adresse des Schuldners"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__debtor_bce_number
+msgid "Debtor BCE Number"
+msgstr "Unternehmensnummer des Schuldners"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__debtor_citizen_identification
+msgid "Debtor Citizen Identification"
+msgstr "Nationale Nummer des Schuldners"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__debtor_city
+msgid "Debtor City"
+msgstr "Schuldner Gemeinde"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__debtor_country_id
+msgid "Debtor Country"
+msgstr "Schuldner Land"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__debtor_name
+msgid "Debtor Name"
+msgstr "Name des Schuldners"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__debtor_phone_number
+msgid "Debtor Phone Number"
+msgstr "Telefonnummer des Schuldners"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__debtor_zip
+msgid "Debtor ZIP"
+msgstr "Postleitzahl des Schuldners"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__company_id
+msgid "Debtor company"
+msgstr "Schuldner Unternehmen"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_281_50__company_id
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_325__company_id
+msgid "Debtor for which the form is created"
+msgstr "Schuldner, für den die Karte erstellt wird"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__debtor_is_natural_person
+msgid "Debtor is Natural Person"
+msgstr "Schuldner ist eine natürliche Person"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__display_name
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__display_name
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325_wizard__display_name
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_reports_periodic_vat_xml_export__display_name
+msgid "Display Name"
+msgstr "Anzeigename"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_50_divider_pdf
+msgid "Divider N°"
+msgstr "Zwischenblatt Nr."
+
+#. module: l10n_be_reports
+#. odoo-javascript
+#: code:addons/l10n_be_reports/static/src/components/tax_report/warnings.xml:0
+msgid "Do not forget to submit the"
+msgstr "Vergessen Sie nicht, die"
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/account_281_50_form.py:0
+msgid "Download 281.50 Form PDF"
+msgstr "Karte 281.50 herunterladen"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.form_281_50_view_form
+msgid "Download pdf"
+msgstr "PDF herunterladen"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields.selection,name:l10n_be_reports.selection__l10n_be_form_325__state__draft
+msgid "Draft"
+msgstr "Entwurf"
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/partner_vat_listing.py:0
+msgid "Duplicate VAT number"
+msgstr "Doppelte MwSt.-Nummer"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields.selection,name:l10n_be_reports.selection__l10n_be_form_325__sender_lang_code__1
+msgid "Dutch"
+msgstr "Niederländisch"
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/account_sales_report.py:0
+msgid "EC Sales List Audit"
+msgstr "Innergemeinschaftliche Liste"
+
+#. module: l10n_be_reports
+#. odoo-javascript
+#: code:addons/l10n_be_reports/static/src/components/tax_report/warnings.xml:0
+msgid "EC Sales list report"
+msgstr "Innergemeinschaftliche Liste"
+
+#. module: l10n_be_reports
+#. odoo-javascript
+#: code:addons/l10n_be_reports/static/src/components/sales_report/warnings.xml:0
+msgid ""
+"EC Sales taxes report total does not match Tax Report lines 44 + 46L + 46T -"
+" 48s44 - 48s46L - 48s46T."
+msgstr ""
+"Gesamtbetrag der innergemeinschaftlichen Liste stimmt nicht mit den "
+"Steuerberichtszeilen 44 + 46L + 46T - 48s44 - 48s46L - 48s46T überein."
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/account_325_form.py:0
+msgid ""
+"Either there isn't any account nor partner with a 281.50 tag or there isn't "
+"any amount to report for this period."
+msgstr ""
+"Entweder gibt es keinen Partner oder Konto mit einem 281.50-Tag oder es gibt"
+" keinen Betrag zu berichten für diesen Zeitraum."
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_281_50_pdf
+msgid "Enterprise N°:"
+msgstr "Unternehmensnummer:"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.view_account_financial_report_export
+msgid "Export Options"
+msgstr "Export-Optionen"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.view_account_financial_report_export
+msgid "Export XML"
+msgstr "XML exportieren"
+
+#. module: l10n_be_reports
+#: model:ir.model,name:l10n_be_reports.model_account_reports_export_wizard_format
+msgid "Export format for accounting's reports"
+msgstr "Exportformat für Buchungsberichte"
+
+#. module: l10n_be_reports
+#: model:ir.model,name:l10n_be_reports.model_account_reports_export_wizard
+msgid "Export wizard for accounting's reports"
+msgstr "Export-Assistent für Buchungsberichte"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__exposed_expenses
+msgid "Exposed expenses"
+msgstr "Ausgelegte Kosten"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "FINANCES"
+msgstr "FINANZEN"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_281_50_pdf
+msgid "FORM N° 281.50 (commissions, brokerage, etc) - YEAR"
+msgstr "KARTE Nr. 281.50 (Provisionen, Honorare usw.) - JAHR"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "FORMS 325.50"
+msgstr "VERZEICHNISSE 325.50"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "Federal Public Service"
+msgstr "Föderaler Öffentlicher Dienst"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__fees
+msgid "Fees"
+msgstr "Gebühren"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__message_follower_ids
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__message_follower_ids
+msgid "Followers"
+msgstr "Follower"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__message_partner_ids
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__message_partner_ids
+msgid "Followers (Partners)"
+msgstr "Follower (Partner)"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_50_divider_pdf
+msgid "Form 281.50 N°"
+msgstr "Nummer der Karte Nr. 281.50"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__form_325_id
+msgid "Form 325"
+msgstr "Verzeichnis 325"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_res_partner__form_file
+#: model:ir.model.fields,field_description:l10n_be_reports.field_res_users__form_file
+msgid "Form File"
+msgstr "Formular-Datei"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__form_281_50_ids
+msgid "Forms 281.50"
+msgstr "Karten 281.50"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__form_281_50_count
+msgid "Forms 281.50 count"
+msgstr "Anzahl der Karten 281.50"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__form_281_50_total_amount
+msgid "Forms 281.50 total"
+msgstr "Gesamt der Karten 281.50"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields.selection,name:l10n_be_reports.selection__l10n_be_form_325__sender_lang_code__2
+msgid "French"
+msgstr "französisch"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "GENERAL TAX ADMINISTRATION"
+msgstr "GENERALVERWALTUNG STEUERWESEN"
+
+#. module: l10n_be_reports
+#: model:ir.model,name:l10n_be_reports.model_account_general_ledger_report_handler
+msgid "General Ledger Custom Handler"
+msgstr ""
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.form_325_view_form
+msgid "Generate 281.50 forms PDF"
+msgstr "281.50 Karten als PDF erstellen"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.form_325_view_form
+msgid "Generate 281.50 forms XML"
+msgstr "281.50 Karten als XML erstellen"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.form_325_wizard_view_form
+msgid "Generate 325 form"
+msgstr "Verzeichnis 325 erstellen"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.form_325_view_form
+msgid "Generate 325 form PDF"
+msgstr "Verzeichnis 325 PDF erstellen"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields.selection,name:l10n_be_reports.selection__l10n_be_form_325__state__generated
+msgid "Generated"
+msgstr "Erzeugt"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields.selection,name:l10n_be_reports.selection__l10n_be_form_325__sender_lang_code__3
+msgid "German"
+msgstr "Deutsch"
+
+#. module: l10n_be_reports
+#: model:ir.model,name:l10n_be_reports.model_report_l10n_be_reports_report_281_50_pdf
+msgid "Get 281.50 report as PDF."
+msgstr "Karte 281.50 als PDF holen."
+
+#. module: l10n_be_reports
+#: model:ir.model,name:l10n_be_reports.model_report_l10n_be_reports_report_281_50_xml
+msgid "Get 281.50 report as XML."
+msgstr "Karte 281.50 als XML holen."
+
+#. module: l10n_be_reports
+#: model:ir.model,name:l10n_be_reports.model_report_l10n_be_reports_report_325_pdf
+msgid "Get 325 Report as PDF"
+msgstr "Verzeichnis 325 als PDF holen"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__has_message
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__has_message
+msgid "Has Message"
+msgstr "Hat eine Nachricht"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__id
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__id
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325_wizard__id
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_reports_periodic_vat_xml_export__id
+msgid "ID"
+msgstr "ID"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__official_id
+msgid "Identification number"
+msgstr "Identifikationsnummer"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_281_50__message_needaction
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_325__message_needaction
+msgid "If checked, new messages require your attention."
+msgstr "Falls markiert, erfordern neue Nachrichten Ihre Aufmerksamkeit."
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_281_50__message_has_error
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_281_50__message_has_sms_error
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_325__message_has_error
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_325__message_has_sms_error
+msgid "If checked, some messages have a delivery error."
+msgstr ""
+"Das Senden mancher Nachrichten ist fehlgeschlagen wenn dieses Fenster "
+"angekreuzt ist."
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__income_debtor_bce_number
+msgid "Income debtor BCE number"
+msgstr "Unternehmensnummer des Schuldners der Einkünfte"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_325__is_test
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_325_wizard__is_test
+msgid "Indicates if the 325 is a test"
+msgstr "Zeigt an, ob die 325 ein Test ist"
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/account_325_form.py:0
+msgid "Internal reference to the following 281.50 tags are missing:\n"
+msgstr "Interne Referenz zu folgenden 281.50-Tags fehlt:\n"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__message_is_follower
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__message_is_follower
+msgid "Is Follower"
+msgstr "Ist ein Follower"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_281_50__partner_is_natural_person
+msgid "Is the partner a natural person? (as opposed to a moral person)"
+msgstr ""
+"Ist der Partner eine natürliche Person? (im Gegensatz zu einer moralischen "
+"Person)"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__partner_job_position
+msgid "Job position"
+msgstr "Ausgeübte Tätigkeit"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__write_uid
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__write_uid
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325_wizard__write_uid
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_reports_periodic_vat_xml_export__write_uid
+msgid "Last Updated by"
+msgstr "Zuletzt aktualisiert von"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__write_date
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__write_date
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325_wizard__write_date
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_reports_periodic_vat_xml_export__write_date
+msgid "Last Updated on"
+msgstr "Zuletzt aktualisiert am"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "Lastname, Firstname (natural persons)"
+msgstr "Name, Vornamen (natürliche Personen)"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_281_50_pdf
+msgid ""
+"Lastname, Firstname (or denomination) and address of the recipient of the "
+"income:"
+msgstr ""
+"Name und Vornamen (oder Bezeichnung) und Anschrift des Empfängers der "
+"Einkünfte:"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_50_divider_pdf
+msgid ""
+"Lastname, Firstname (or denomination) of beneficiaries\n"
+"                                    <br/>\n"
+"                                    Street, n°, eventually box\n"
+"                                    <br/>\n"
+"                                    Zip code and city"
+msgstr ""
+"Name und Vorname (oder Bezeichnung) der Empfänger\n"
+"                                    <br/\n"
+"                                    Straße, Hausnummer und eventuell Bk.\n"
+"                                    <br/>\n"
+"                                    Postleitzahl und Gemeinde"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,help:l10n_be_reports.field_res_partner__forms_281_50
+#: model:ir.model.fields,help:l10n_be_reports.field_res_users__forms_281_50
+msgid "List of 281.50 forms for this partner"
+msgstr "Liste der Karten 281.50 für diesen Partner"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__message_has_error
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__message_has_error
+msgid "Message Delivery error"
+msgstr "Error beim senden der Nachricht"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__message_ids
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__message_ids
+msgid "Messages"
+msgstr "Nachrichten"
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/res_partner.py:0
+msgid "Missing partner data"
+msgstr "Fehlende Partnerdaten"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields.selection,name:l10n_be_reports.selection__l10n_be_form_325__treatment_type__1
+#: model:ir.model.fields.selection,name:l10n_be_reports.selection__l10n_be_form_325_wizard__treatment_type__1
+msgid "Modification"
+msgstr "Änderung"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_281_50_pdf
+msgid "NIL"
+msgstr "NIHIL"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_50_divider_pdf
+msgid "NN or NE:"
+msgstr "NN oder UN:"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "NUMBER OF FORMS"
+msgstr "ANZAHL ERSTELLTER KARTEN"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_281_50__partner_name
+msgid "Name of the partner when the form was created"
+msgstr "Name des Partners bei der Erstellung der Karte"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__partner_is_natural_person
+msgid "Natural person"
+msgstr "Natürliche Person"
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/account_sales_report.py:0
+#: code:addons/l10n_be_reports/models/partner_vat_listing.py:0
+msgid "No VAT number associated with your company."
+msgstr "Keine Umsatzsteuer-Identifikationsnummer für Ihr Unternehmen."
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/account_report.py:0
+msgid "No email address associated with company %s."
+msgstr "Keine E-Mail-Adresse mit dem Unternehmen %s verbunden."
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/account_sales_report.py:0
+#: code:addons/l10n_be_reports/models/partner_vat_listing.py:0
+msgid "No email address associated with the company."
+msgstr "Keine mit dem Unternehmen verbundene E-Mail-Adresse."
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/account_report.py:0
+msgid "No phone associated with company %s."
+msgstr "Keine Telefonnummer für das Unternehmen %s."
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/account_sales_report.py:0
+#: code:addons/l10n_be_reports/models/partner_vat_listing.py:0
+msgid "No phone associated with the company."
+msgstr "Keine Telefonnummer für das Unternehmen."
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/account_sales_report.py:0
+msgid "No vat number defined for %s."
+msgstr "Keine Mehrwertsteuernummer für %s definiert."
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/account_report.py:0
+msgid "Not allowed negative amounts"
+msgstr "Kein negativer Betrag erlaubt"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__message_needaction_counter
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__message_needaction_counter
+msgid "Number of Actions"
+msgstr "Anzahl der Aktionen"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__message_has_error_counter
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__message_has_error_counter
+msgid "Number of errors"
+msgstr "# Fehler"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_281_50__message_needaction_counter
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_325__message_needaction_counter
+msgid "Number of messages requiring action"
+msgstr "Anzahl der Nachrichten, die eine Aktion erfordern"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_281_50__message_has_error_counter
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_325__message_has_error_counter
+msgid "Number of messages with delivery error"
+msgstr "Anzahl der Nachrichten mit Zustellungsfehler"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "N° 1"
+msgstr "Nr. 1"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "N° 2"
+msgstr "Nr. 2"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "N° 3"
+msgstr "Nr. 3"
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/res_partner.py:0
+#, python-format
+msgid ""
+"Only users with the access group '%s' can unset the 281.50 category on "
+"partners."
+msgstr ""
+"Nur Benutzer mit der Zugriffsgruppe '%s' können die Kategorie 281.50 bei "
+"Partnern aufheben"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.form_325_view_form
+msgid "Open"
+msgstr "Offen"
+
+#. module: l10n_be_reports
+#: model:ir.ui.menu,name:l10n_be_reports.menu_action_open_325_tree_view
+msgid "Open 325 forms"
+msgstr "Verzeichnisse 325 öffnen"
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/res_partner.py:0
+msgid "Open list"
+msgstr "Liste öffnen"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_reports_periodic_vat_xml_export__calling_export_wizard_id
+msgid ""
+"Optional field containing the report export wizard calling this wizard, if "
+"there is one."
+msgstr ""
+
+#. module: l10n_be_reports
+#: model:ir.model.fields.selection,name:l10n_be_reports.selection__l10n_be_form_325__treatment_type__0
+#: model:ir.model.fields.selection,name:l10n_be_reports.selection__l10n_be_form_325_wizard__treatment_type__0
+msgid "Original"
+msgstr "Original"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields.selection,name:l10n_be_reports.selection__l10n_be_form_325__sending_type__0
+#: model:ir.model.fields.selection,name:l10n_be_reports.selection__l10n_be_form_325_wizard__sending_type__0
+msgid "Original send"
+msgstr "Original-Senden"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "PAYROLL DEDUCTIONS"
+msgstr "BERUFSSTEUERVORABZUG"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__paid_amount
+msgid "Paid amount"
+msgstr "Gezahlter Betrag"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__partner_id
+msgid "Partner"
+msgstr "Partner"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__partner_name
+msgid "Partner Name"
+msgstr "Partner Name"
+
+#. module: l10n_be_reports
+#: model:ir.actions.client,name:l10n_be_reports.action_account_report_l10n_be_partner_vat_listing
+#: model:ir.actions.client,name:l10n_be_reports.action_account_report_partner_vat_listing
+#: model:ir.ui.menu,name:l10n_be_reports.menu_action_account_report_l10n_be_partner_vat_listing
+msgid "Partner VAT Listing"
+msgstr "Jährliche Kundenliste"
+
+#. module: l10n_be_reports
+#: model:ir.model,name:l10n_be_reports.model_l10n_be_partner_vat_handler
+msgid "Partner VAT Listing Custom Handler"
+msgstr ""
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_281_50__partner_id
+msgid "Partner for which this 281.50 form has been created"
+msgstr "Partner, für den diese Karte 281.50 erstellt wurde"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.view_partner_281_50_required_fields
+msgid "Partner with missing information"
+msgstr "Partner mit fehlenden Informationen"
+
+#. module: l10n_be_reports
+#. odoo-javascript
+#: code:addons/l10n_be_reports/static/src/components/partner_vat_listing/warnings.xml:0
+msgid "Partners sharing the same VAT number"
+msgstr "Partner, die dieselbe Umsatzsteuer-Identifikationsnummer haben"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_account_reports_export_wizard__l10n_be_reports_periodic_vat_wizard_id
+msgid "Periodic VAT Export Wizard"
+msgstr ""
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "Postal code and city"
+msgstr "Postleitzahl und Gemeinde"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_281_50_pdf
+msgid "Profession:"
+msgstr "Ausgeübte Tätigkeit:"
+
+#. module: l10n_be_reports
+#: model:ir.actions.client,name:l10n_be_reports.action_account_report_be_pl_asso_a
+#: model:ir.actions.client,name:l10n_be_reports.action_account_report_be_pl_asso_f
+#: model:ir.actions.client,name:l10n_be_reports.action_account_report_be_pl_comp_a
+#: model:ir.actions.client,name:l10n_be_reports.action_account_report_be_pl_comp_f
+msgid "Profit and Loss"
+msgstr "Schema der Ergebnisrechnung"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid ""
+"RECEPTION DATE\n"
+"                                                        <br/>\n"
+"                                                        (For administration use only)"
+msgstr ""
+"EMPFANGSDATUM\n"
+"                                                        <br/>\n"
+"                                                        (der Verwaltung vorbehaltener Rahmen)"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__reference_year
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325_wizard__reference_year
+msgid "Reference Year"
+msgstr "Bezugsjahr"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__reference_year
+msgid "Reference year"
+msgstr "Bezugsjahr"
+
+#. module: l10n_be_reports
+#: model:ir.model,name:l10n_be_reports.model_l10n_be_form_281_50
+msgid "Represents a 281.50 form"
+msgstr "Steht für eine Karte 281.50"
+
+#. module: l10n_be_reports
+#: model:ir.model,name:l10n_be_reports.model_l10n_be_form_325
+msgid "Represents a 325 form"
+msgstr "Steht für ein Verzeichnis 325"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__message_has_sms_error
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__message_has_sms_error
+msgid "SMS Delivery error"
+msgstr "SMS Zustellungsfehler"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "SUMMARY STATEMENT YEAR"
+msgstr "ZUSAMMENFASSENDES VERZEICHNIS JAHR"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "SUMMARY TABLE OF RECORDS AND PAYROLL DEDUCTIONS (1)"
+msgstr "ZUSAMMENFASSENDE TABELLE DER KARTEN UND DES BERUFSSTEUERVORABZUGS (1)"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields.selection,name:l10n_be_reports.selection__l10n_be_form_325__sending_type__1
+#: model:ir.model.fields.selection,name:l10n_be_reports.selection__l10n_be_form_325_wizard__sending_type__1
+msgid "Send grouped corrections"
+msgstr "Gruppierte Korrekturen senden"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__sender_id
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325_wizard__sender_id
+msgid "Sender"
+msgstr "Absender"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__sender_address
+msgid "Sender Address"
+msgstr "Adresse des Absenders"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__sender_bce_number
+msgid "Sender BCE Number"
+msgstr "Unternehmensnummer des Absenders"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__sender_city
+msgid "Sender City"
+msgstr "Gemeinde des Absenders"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__sender_lang_code
+msgid "Sender Language Code"
+msgstr "Sprachcode des Absenders"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__sender_name
+msgid "Sender Name"
+msgstr "Name des Absenders"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__sender_phone_number
+msgid "Sender Phone Number"
+msgstr "Telefonnummer des Absenders"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__sender_zip
+msgid "Sender ZIP"
+msgstr "Postleitzahl des Absenders"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325_wizard__sending_type
+msgid "Sending Type"
+msgstr "Sendender Typ"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__sending_type
+msgid "Sending type"
+msgstr "Sendetyp"
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/account_report.py:0
+msgid "Some fields required for the export are missing. Please specify them."
+msgstr ""
+"Einige für den Export erforderliche Felder fehlen. Bitte geben Sie diese an."
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/res_partner.py:0
+msgid ""
+"Some partners are not correctly configured. Please be sure that the "
+"following pieces of information are set: street, zip code, country%s and vat"
+" or citizen identification."
+msgstr ""
+"Einige Partner sind nicht richtig konfiguriert. Bitte stellen Sie sicher, "
+"dass die folgenden Informationen gesetzt sind: Straße, Postleitzahl, Land%s "
+"und Umsatzsteuer-Identifikationsnummer order Nationale Registernummer."
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/account_report.py:0
+msgid "Specify"
+msgstr "Angeben"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__state
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__state
+msgid "State"
+msgstr "Staat"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "Street and n°"
+msgstr "Straße und Nr."
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "TOTAL AMOUNT"
+msgstr "GESAMTBETRAG"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "TOTALS"
+msgstr "GESAMTBETRAG"
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/account_general_ledger.py:0
+msgid "TXT"
+msgstr ""
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,help:l10n_be_reports.field_res_partner__form_file
+#: model:ir.model.fields,help:l10n_be_reports.field_res_users__form_file
+msgid "Technical field to store all forms file."
+msgstr "Technisches Feld zum Speichern aller Formulardateien."
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__is_test
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325_wizard__is_test
+msgid "Test Form"
+msgstr "Test"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_325_wizard__sender_id
+msgid "The company responsible for sending the form."
+msgstr "Das für den Versand der Karte verantwortliche Unternehmen."
+
+#. module: l10n_be_reports
+#. odoo-javascript
+#: code:addons/l10n_be_reports/static/src/components/tax_report/warnings.xml:0
+#, fuzzy, python-format
+#| msgid "Some controls failed"
+msgid "The following controls failed:"
+msgstr "Einige Kontrollen fehlgeschlagen"
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/wizard/l10n_be_325_form_wizard.py:0
+msgid "The reference year must be a number."
+msgstr "Das Bezugsjahr muss eine Zahl sein."
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,help:l10n_be_reports.field_res_partner__citizen_identification
+#: model:ir.model.fields,help:l10n_be_reports.field_res_users__citizen_identification
+msgid ""
+"This code corresponds to the personal identification number for the tax "
+"authorities."
+msgstr ""
+"Dieser Code entspricht der Nationalregisternummer für die Steuerbehörden."
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_325__sending_type
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_325_wizard__sending_type
+msgid ""
+"This field allows to make an original sending(correspond to first send) or a"
+" grouped corrections(if you have made some mistakes before)."
+msgstr ""
+"In diesem Feld können Sie eine Originalsendung (entspricht der ersten "
+"Sendung) oder eine gruppierte Korrektur (falls Sie zuvor einige Fehler "
+"gemacht haben) vornehmen."
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_281_50__treatment_type
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_325__treatment_type
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_325_wizard__treatment_type
+msgid "This field represents the nature of the form."
+msgstr "Dieses Feld repräsentiert die Art des Formulars."
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_50_divider_pdf
+msgid "To be completed only if this divider is not the first or the only one"
+msgstr ""
+"Nur auszufüllen, wenn dieses Zwischenblatt weder das erste noch das einzige "
+"Zwischenblatt ist."
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_50_divider_pdf
+msgid "Total amount or to be transferred to the next divider:"
+msgstr "Gesamtbetrag oder zu übertragen auf das folgende Zwischenblatt:"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_50_divider_pdf
+msgid "Total mentionned in box 3 e of the form 281.50"
+msgstr "Im Rahmen 3, e, der Karte Nr. 281.50 angegebener Gesamtbetrag"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__total_remuneration
+msgid "Total remuneration"
+msgstr "Gesamtbetrag"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__treatment_type
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__treatment_type
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325_wizard__treatment_type
+msgid "Treatment Type"
+msgstr "Behandlungstyp"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__user_id
+msgid "User"
+msgstr "Benutzer"
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/partner_vat_listing.py:0
+msgid "VAT Listing Audit"
+msgstr "Jährliche Kundenliste Prüfung"
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/account_sales_report.py:0
+#: code:addons/l10n_be_reports/models/partner_vat_listing.py:0
+msgid "View Partner"
+msgstr "Ansicht Partner"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__website_message_ids
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_325__website_message_ids
+msgid "Website Messages"
+msgstr "Website-Nachrichten"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_281_50__website_message_ids
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_325__website_message_ids
+msgid "Website communication history"
+msgstr "Website-Kommunikationsverlauf"
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/account_report.py:0
+#: code:addons/l10n_be_reports/models/account_sales_report.py:0
+#: code:addons/l10n_be_reports/models/partner_vat_listing.py:0
+msgid "XML"
+msgstr "XML"
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/account_report.py:0
+msgid "XML Export Options"
+msgstr "XML-Exportoptionen"
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/account_325_form.py:0
+msgid "You already generated 281.50 forms for this 325 form."
+msgstr "Sie haben bereits Karten 281.50 für dieses Verzeichnis 325 generiert."
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/account_281_50_form.py:0
+#: code:addons/l10n_be_reports/models/account_325_form.py:0
+msgid ""
+"You can't delete a 281.50 for which its form 325 xml has been generated"
+msgstr ""
+"Sie können eine 281.50 nicht löschen, für die ihr Verzeichnis 325 XML "
+"generiert wurde"
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/wizard/l10n_be_325_form_wizard.py:0
+msgid "You can't use a reference year in the future or for the current year."
+msgstr ""
+"Sie können kein Referenzjahr in der Zukunft oder für das aktuelle Jahr "
+"verwenden."
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/wizard/l10n_be_325_form_wizard.py:0
+msgid "You must be logged in a Belgian company to use this feature"
+msgstr ""
+"Sie müssen bei einem belgischen Unternehmen angemeldet sein, um diese "
+"Funktion nutzen zu können"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,field_description:l10n_be_reports.field_l10n_be_form_281_50__partner_zip
+msgid "Zip"
+msgstr "PLZ"
+
+#. module: l10n_be_reports
+#: model:ir.model.fields,help:l10n_be_reports.field_l10n_be_form_281_50__partner_zip
+msgid "Zip of the partner when the form was created"
+msgstr "Postleitzahl des Partners bei Erstellung der Karte"
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/account_report.py:0
+msgid ""
+"[44] < ([00] + [01] + [02] + [03] + [45] + [46] + [47] + [48] + [49]) * 200 "
+"if [44] > 99.999"
+msgstr ""
+"[44] < ([00] + [01] + [02] + [03] + [45] + [46] + [47] + [48] + [49]) * 200,"
+" wenn [44] > 99.999"
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/account_report.py:0
+#, python-format
+msgid ""
+"[44] < ([00] + [01] + [02] + [03] + [45] + [46] + [47] + [48] + [49]) * 200 "
+"if [88] > 99.999"
+msgstr ""
+"[44] < ([00] + [01] + [02] + [03] + [45] + [46] + [47] + [48] + [49]) * 200,"
+" wenn [88] > 99.999"
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/account_report.py:0
+msgid "[55] > 0 if [86] > 0 or [88] > 0"
+msgstr "[55] > 0, wenn [86] > 0 oder [88] > 0"
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/account_report.py:0
+msgid "[56] + [57] > 0 if [87] > 0"
+msgstr "[56] + [57] > 0, wenn [87] > 0"
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/account_report.py:0
+msgid "[88] < ([81] + [82] + [83] + [84]) * 100 if [88] > 99.999"
+msgstr "[88] < ([81] + [82] + [83] + [84]) * 100, wenn [88] > 99.999"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_281_50_pdf
+msgid ""
+"a) Commissions, brokerage, commercial discounts, etc:\n"
+"                                                <br/>\n"
+"                                                b) Fees or vacations:\n"
+"                                                <br/>\n"
+"                                                c) Benefits in kind (nature : ................)\n"
+"                                                <br/>\n"
+"                                                d) Expenses incurred on behalf of the beneficiary:\n"
+"                                                <br/>\n"
+"                                                e) Total (see also in sections f and g below):"
+msgstr ""
+"a) Provisionen, Maklergebühren, Handelsrabatte usw.:\n"
+"                                                <br/>\n"
+"                                                b) Sitzungsgelder oder Honorare:\n"
+"                                                <br/>\n"
+"                                                c) Vorteile jeglicher Art (Art: ................)\n"
+"                                                <br/>\n"
+"                                                d) Für Rechnung des Empfängers ausgelegte Kosten:\n"
+"                                                <br/>\n"
+"                                                e) Gesamtbetrag (siehe auch Rubriken f und g hier unten):"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.res_partner_view_form_inherit
+msgid "e.g. 123455 555 6"
+msgstr "z.B. 123455 555 6"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.form_325_wizard_view_form
+msgid "e.g. 2018"
+msgstr "z.B. 2018"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_325_pdf
+msgid "established by :"
+msgstr "ausgestellt durch:"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_281_50_pdf
+msgid ""
+"f) Enter here, if applicable, the amount included in item e\n"
+"                                            above relates to compensation paid to:\n"
+"                                            <br/>\n"
+"                                            - athletes for their sports performances:\n"
+"                                            <br/>\n"
+"                                            - trainers, coaches and accompaniers for their activity for the\n"
+"                                            benefit of the athletes:"
+msgstr ""
+"f) Falls der in Rubrik e eingetragene Betrag Entschädigungen an Sportier für sportliche Aktivitäten oder Entschädigungen an Ausbilder, Trainer oder Betreuer für ihre Tätigkeit zugunsten von Sportlern enthält, tragen Sie hier den in diesen Entschädigungen enthaltenen Betrag ein, der gezahlt wurde an:\n"
+"                                            <br/>\n"
+"                                            - Sportler für ihre sportlichen Aktivitäten:\n"
+"                                            <br/>\n"
+"                                            - Ausbilder, Trainer oder Begleiter für ihre Tätigkeiten zu Gunsten von Sportlern:"
+
+#. module: l10n_be_reports
+#: model_terms:ir.ui.view,arch_db:l10n_be_reports.report_281_50_pdf
+msgid ""
+"g) If the amount indicated in item e above does not coincide with\n"
+"                                                the amount actually paid in"
+msgstr "g) Wenn der unter e eingetragene Betrag nicht mit dem"
+
+#. module: l10n_be_reports
+#. odoo-python
+#: code:addons/l10n_be_reports/models/partner_vat_listing.py:0
+#, python-format
+msgid "Missing partners"
+msgstr "Fehlende Partner"
+
+#. module: l10n_be_reports
+#. odoo-javascript
+#: code:addons/l10n_be_reports/static/src/components/partner_vat_listing/warnings.xml:0
+#, python-format
+msgid ""
+"customers with a turnover of more than 250€ or one or more credit notes in "
+"the selected period who are not included in the report. Click"
+msgstr ""
+"Kunden mit einem Umsatz von mehr als 250€ oder einer oder mehreren "
+"Gutschriften im ausgewählten Zeitraum, die nicht im Bericht enthalten sind. "
+"Klicken Sie"
+
+#. module: l10n_be_reports
+#. odoo-javascript
+#: code:addons/l10n_be_reports/static/src/components/partner_vat_listing/warnings.xml:0
+#, python-format
+msgid "You have"
+msgstr "Sie haben"
+
+#. module: l10n_be_reports
+#. odoo-javascript
+#: code:addons/l10n_be_reports/static/src/components/partner_vat_listing/warnings.xml:0
+#, python-format
+msgid "here"
+msgstr "hier"
+
+#. module: l10n_be_reports
+#. odoo-javascript
+#: code:addons/l10n_be_reports/static/src/components/partner_vat_listing/warnings.xml:0
+#, python-format
+msgid "to see the list."
+msgstr ", um die Liste zu sehen."
+
+#. module: l10n_be_reports
+#. odoo-javascript
+#: code:addons/l10n_be_reports/static/src/components/partner_vat_listing/warnings.xml:0
+msgid "will be grouped in the XML export."
+msgstr "werden im XML-Export in Gruppen zusammengefasst."

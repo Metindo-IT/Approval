@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="sale_commission_plan_view_form" model="ir.ui.view">
+        <field name="name">sale.commission.plan.view.form</field>
+        <field name="model">sale.commission.plan</field>
+        <field name="inherit_id" ref="sale_commission.sale_commission_plan_view_form" />
+        <field name="arch" type="xml">
+        <xpath expr="//notebook[@name='main_book']//group" position="after">
+            <button string="Commission table" type="object" name="action_export_targets" icon="fa-download" class="btn btn-link"/>
+        </xpath>
+        </field>
+    </record>
+</odoo>

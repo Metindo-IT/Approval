@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="base.demo_company_tr" model="res.company" forcecreate="1">
+        <field name="name">My Turkish Company</field>
+        <field name="currency_id" ref="base.TRY"/>
+        <field name="country_id" ref="base.tr"/>
+    </record>
+
+    <record id="base.user_admin" model="res.users">
+        <field name="company_ids" eval="[(4, ref('base.demo_company_tr'))]"/>
+    </record>
+
+    <record id="base.user_demo" model="res.users">
+        <field name="company_ids" eval="[(4, ref('base.demo_company_tr'))]"/>
+    </record>
+
+    <record id="marketing_department_tr" model="hr.department">
+        <field name="name">Marketing</field>
+        <field name="company_id" ref="base.demo_company_tr"/>
+    </record>
+    <record id="accounting_department_tr" model="hr.department">
+        <field name="name">Admin</field>
+        <field name="company_id" ref="base.demo_company_tr"/>
+    </record>
+
+    <record id="job_marketing_manager_tr" model="hr.job">
+        <field name="name">Marketing Manager</field>
+        <field name="department_id" ref="marketing_department_tr"/>
+        <field name="company_id" ref="base.demo_company_tr"/>
+    </record>
+    <record id="job_accounting_manager_tr" model="hr.job">
+        <field name="name">Accounting Manager</field>
+        <field name="department_id" ref="accounting_department_tr"/>
+        <field name="company_id" ref="base.demo_company_tr"/>
+    </record>
+
+    <record id="hr_employee_deniz_hasim" model="hr.employee">
+        <field name="name">Deniz Hasim</field>
+        <field name="job_id" ref="job_marketing_manager_tr"/>
+        <field name="country_id" ref="base.tr"/>
+        <field name="company_id" ref="base.demo_company_tr"/>
+        <field name="gender">male</field>
+        <field name="department_id" ref="marketing_department_tr"/>
+        <field name="tz">Asia/Istanbul</field>
+    </record>
+    <record id="hr_employee_narin_emre" model="hr.employee">
+        <field name="name">Narin Emre</field>
+        <field name="job_id" ref="job_accounting_manager_tr"/>
+        <field name="country_id" ref="base.tr"/>
+        <field name="company_id" ref="base.demo_company_tr"/>
+        <field name="gender">female</field>
+        <field name="department_id" ref="accounting_department_tr"/>
+        <field name="tz">Asia/Istanbul</field>
+    </record>
+
+    <record id="hr_contract_deniz_hasim" model="hr.contract">
+        <field name="name">Temporary Contract - Deniz Hasim</field>
+        <field name="department_id" ref="marketing_department_tr"/>
+        <field name="employee_id" ref="hr_employee_deniz_hasim"/>
+        <field name="job_id" ref="job_marketing_manager_tr"/>
+        <field name="wage">15000</field>
+        <field name="state">open</field>
+        <field name="hr_responsible_id" ref="base.user_demo"/>
+        <field name="company_id" ref="base.demo_company_tr"/>
+        <field name="date_start" eval="DateTime.today() + relativedelta(months=-4, days=-10)"/>
+        <field name="contract_type_id" ref="hr.contract_type_temporary"/>
+    </record>
+    <record id="hr_contract_narin_emre" model="hr.contract">
+        <field name="name">Full-Time Contract - Narin Emre</field>
+        <field name="department_id" ref="accounting_department_tr"/>
+        <field name="employee_id" ref="hr_employee_narin_emre"/>
+        <field name="job_id" ref="job_accounting_manager_tr"/>
+        <field name="wage">20000</field>
+        <field name="state">open</field>
+        <field name="hr_responsible_id" ref="base.user_demo"/>
+        <field name="company_id" ref="base.demo_company_tr"/>
+        <field name="date_start" eval="DateTime(DateTime.today().year-3,month=2,day=25)"/>
+        <field name="contract_type_id" ref="hr.contract_type_full_time"/>
+    </record>     
+</odoo>

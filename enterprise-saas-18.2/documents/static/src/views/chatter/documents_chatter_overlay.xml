@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+    <t t-name="documents.DocumentsViews.ChatterOverlay">
+        <div class="documents_chatter_disabled_overlay o_view_nocontent bg-white position-sticky w-100">
+            <div class="o_nocontent_help">
+                <p class="o_view_nocontent_smiling_face">
+                    <t t-if="itemsNumber">
+                        <t t-out="itemsNumber"/> items selected
+                    </t>
+                    <t t-else="">
+                        Select an item to open the chatter
+                    </t>
+                </p>
+            </div>
+        </div>
+    </t>
+</templates>

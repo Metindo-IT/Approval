@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="ec_sales_list_activity" model="mail.activity.type">
+            <field name="name">EC Sales List</field>
+            <field name="summary">EC Sales List Report</field>
+            <field name="res_model">account.journal</field>
+            <field name="category">ec_sales_list</field>
+            <field name="delay_count">0</field>
+        </record>
+
+        <record id="partner_vat_listing_report_activity" model="mail.activity.type">
+            <field name="name">Partner VAT Listing Report</field>
+            <field name="summary">Partner VAT Listing Report</field>
+            <field name="res_model">account.journal</field>
+            <field name="category">partner_vat_listing_report</field>
+            <field name="delay_count">0</field>
+        </record>
+    </data>
+</odoo>

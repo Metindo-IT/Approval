@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="base.demo_company_sa" model="res.company" forcecreate="1">
+        <field name="name">My Saudi Arabian Company</field>
+        <field name="vat">310175397400003</field>
+        <field name="country_id" ref="base.sa"/>
+        <field name="street">Al Amir Mohammed Bin Abdul Aziz Street</field>
+        <field name="city">المدينة المنورة</field>
+        <field name="zip">42317</field>
+        <field name="phone">+966 51 234 5678</field>
+        <field name="email">info@company.saexample.com</field>
+        <field name="website">www.saexample.com</field>
+    </record>
+
+    <record id="base.user_admin" model="res.users">
+        <field name="company_ids" eval="[(4, ref('base.demo_company_sa'))]"/>
+    </record>
+
+    <record id="base.user_demo" model="res.users">
+        <field name="company_ids" eval="[(4, ref('base.demo_company_sa'))]"/>
+    </record>
+
+    <record id="hr_department_sa" model="hr.department">
+        <field name="name">Human Resources</field>
+        <field name="company_id" ref="base.demo_company_sa"/>
+    </record>
+    <record id="administration_department_sa" model="hr.department">
+        <field name="name">Administration</field>
+        <field name="company_id" ref="base.demo_company_sa"/>
+    </record>
+
+    <record id="job_manager_sa" model="hr.job">
+        <field name="name">Manager</field>
+        <field name="department_id" ref="hr_department_sa"/>
+        <field name="company_id" ref="base.demo_company_sa"/>
+    </record>
+    <record id="job_sales_admin_sa" model="hr.job">
+        <field name="name">Sales Admin</field>
+        <field name="department_id" ref="administration_department_sa"/>
+        <field name="company_id" ref="base.demo_company_sa"/>
+    </record>
+
+    <record id="res_partner_nura_saad_abdullah" model="res.partner">
+        <field name="name">Nura Saad Abdullah</field>
+        <field name="country_id" ref="base.sa"/>
+        <field name="company_id" ref="base.demo_company_sa"/>
+    </record>
+    <record id="res_partner_salem_ahmed_abdullah" model="res.partner">
+        <field name="name">Salem Ahmed Abdullah</field>
+        <field name="country_id" ref="base.sa"/>
+        <field name="company_id" ref="base.demo_company_sa"/>
+    </record>
+
+    <record id="res_partner_bank_account_nura_saad_abdullah" model="res.partner.bank">
+        <field name="acc_number">SA4420000001234567891234</field>
+        <field name="bank_id" ref="base.bank_ing"/>
+        <field name="company_id" ref="base.demo_company_sa"/>
+        <field name="partner_id" ref="res_partner_nura_saad_abdullah"/>
+    </record>
+    <record id="res_partner_bank_account_salem_ahmed_abdullah" model="res.partner.bank">
+        <field name="acc_number">SA0380000000608010167519</field>
+        <field name="bank_id" ref="base.bank_ing"/>
+        <field name="company_id" ref="base.demo_company_sa"/>
+        <field name="partner_id" ref="res_partner_salem_ahmed_abdullah"/>
+    </record>
+
+    <record id="hr_employee_nura_saad_abdullah" model="hr.employee">
+        <field name="name">Nura Saad Abdullah</field>
+        <field name="job_id" ref="job_manager_sa"/>
+        <field name="country_id" ref="base.sa"/>
+        <field name="company_id" ref="base.demo_company_sa"/>
+        <field name="gender">female</field>
+        <field name="department_id" ref="hr_department_sa"/>
+        <field name="identification_id">7654321</field>
+        <field name="tz">Asia/Riyadh</field>
+        <field name="bank_account_id" ref="res_partner_bank_account_nura_saad_abdullah"/>
+    </record>
+    <record id="hr_employee_salem_ahmed_abdullah" model="hr.employee">
+        <field name="name">Salem Ahmed Abdullah</field>
+        <field name="job_id" ref="job_sales_admin_sa"/>
+        <field name="country_id" ref="base.sa"/>
+        <field name="company_id" ref="base.demo_company_sa"/>
+        <field name="gender">male</field>
+        <field name="department_id" ref="administration_department_sa"/>
+        <field name="identification_id">123456</field>
+        <field name="tz">Asia/Riyadh</field>
+        <field name="bank_account_id" ref="res_partner_bank_account_salem_ahmed_abdullah"/>
+    </record>
+
+    <record id="hr_contract_nura_saad_abdullah" model="hr.contract">
+        <field name="name">Permanent Contract - Nura Saad Abdullah</field>
+        <field name="department_id" ref="hr_department_sa"/>
+        <field name="employee_id" ref="hr_employee_nura_saad_abdullah"/>
+        <field name="job_id" ref="job_manager_sa"/>
+        <field name="wage">7000</field>
+        <field name="state">open</field>
+        <field name="hr_responsible_id" ref="base.user_demo"/>
+        <field name="company_id" ref="base.demo_company_sa"/>
+        <field name="l10n_sa_housing_allowance">2000</field>
+        <field name="l10n_sa_transportation_allowance">1000</field>
+        <field name="l10n_sa_other_allowances">500</field>
+        <field name="l10n_sa_number_of_days">30</field>
+        <field name="contract_type_id" ref="hr.contract_type_permanent"/>
+        <field name="date_start" eval="DateTime(DateTime.today().year-5,month=4,day=20)"/>
+    </record>
+    <record id="hr_contract_salem_ahmed_abdullah" model="hr.contract">
+        <field name="name">Permanent Contract - Salem Ahmed Abdullah</field>
+        <field name="department_id" ref="administration_department_sa"/>
+        <field name="employee_id" ref="hr_employee_salem_ahmed_abdullah"/>
+        <field name="job_id" ref="job_sales_admin_sa"/>
+        <field name="wage">4500</field>
+        <field name="state">open</field>
+        <field name="hr_responsible_id" ref="base.user_demo"/>
+        <field name="company_id" ref="base.demo_company_sa"/>
+        <field name="l10n_sa_housing_allowance">1700</field>
+        <field name="l10n_sa_transportation_allowance">250</field>
+        <field name="l10n_sa_other_allowances">550</field>
+        <field name="l10n_sa_number_of_days">23</field>
+        <field name="contract_type_id" ref="hr.contract_type_permanent"/>
+        <field name="date_start" eval="DateTime(DateTime.today().year-2,month=1,day=1)"/>
+    </record>     
+</odoo>

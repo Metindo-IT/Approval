@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+    <t t-name="documents.FileViewer" t-inherit="web.FileViewer" t-inherit-mode="primary">
+        <xpath expr="//div[hasclass('o-FileViewer-download')]" position="before">
+            <div t-attf-class="d-flex align-items-center {{env.isSmall ? 'pe-2' : 'pe-4'}}">
+                <DocumentsAction folderId="folderId" targetRecords="[previewed.document?.record]" isPreview="true"/>
+                <button t-if="isChatterButtonVisible"
+                    class="ms-1 btn btn-secondary"
+                    t-att-class="{'active': this.chatterState.visible}"
+                    t-on-click="() => this.documentService.toggleChatterState()">
+                    <i class="fa fa-fw fa-info-circle"/>
+                </button>
+            </div>
+        </xpath>
+        <xpath expr="//div[hasclass('o-FileViewer-download')]" position="replace"/>
+        <xpath expr="//div[hasclass('o-FileViewer-navigation')][@aria-label='Previous']" position="attributes">
+            <attribute name="class" add="bg-dark" separator=" "/>
+        </xpath>
+        <xpath expr="//div[hasclass('o-FileViewer-navigation')][@aria-label='Next']" position="attributes">
+            <attribute name="class" add="bg-dark" separator=" "/>
+        </xpath>
+        <xpath expr="//span[hasclass('oi-chevron-left')]" position="attributes">
+            <attribute name="class" add="pe-1 text-white" separator=" "/>
+        </xpath>
+        <xpath expr="//span[hasclass('oi-chevron-right')]" position="attributes">
+            <attribute name="class" add="ps-1 text-white" separator=" "/>
+        </xpath>
+    </t>
+</templates>

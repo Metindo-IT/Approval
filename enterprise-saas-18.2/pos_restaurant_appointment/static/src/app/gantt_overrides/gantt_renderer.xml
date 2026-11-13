@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates id="template" xml:space="preserve">
+    <t t-name="pos_gantt.GanttRenderer.Pill" t-inherit="web_gantt.GanttRenderer.Pill" t-inherit-mode="primary">
+        <xpath expr='//span[@class="o_gantt_pill_title text-truncate mx-1"]' position="attributes">
+            <attribute name="t-esc">pill.displayName + ' ' + pill.record.resource_total_capacity_reserved + 'p'</attribute>
+        </xpath>
+    </t>
+</templates>

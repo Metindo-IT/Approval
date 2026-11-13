@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="documents.ControlPanel" t-inherit="web.ControlPanel" t-inherit-mode="primary">
+        <xpath expr="//t[@t-else='']/Breadcrumbs" position="replace">
+            <DocumentsBreadcrumbs breadcrumbs="pathBreadcrumbs"/>
+        </xpath>
+
+        <xpath expr="//div[hasclass('o_control_panel_actions')]" position="inside">
+            <DocumentsAction t-if="!documentService.previewedDocument" folderId="currentFolderId" targetRecords="this.env.model.root.selection"/>
+        </xpath>
+
+        <xpath expr="//*[hasclass('o_cp_switch_buttons')]" position="before">
+            <button t-if="documentService.userIsInternal"
+                t-on-click="() => this.documentService.toggleChatterState()"
+                data-tooltip="Info &amp; tags"
+                class="btn btn-secondary o_switch_view o_kanban d-none d-md-inline"
+                t-att-class="{'active': this.chatterState.visible}">
+                <i class="fa fa-fw fa-info-circle mt-1"/>
+            </button>
+        </xpath>
+    </t>
+</templates>

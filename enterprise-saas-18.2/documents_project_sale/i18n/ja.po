@@ -1,0 +1,82 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* documents_project_sale
+# 
+# Translators:
+# Wil Odoo, 2025
+# Junko Augias, 2025
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server saas~18.2+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-20 10:32+0000\n"
+"PO-Revision-Date: 2025-02-21 08:35+0000\n"
+"Last-Translator: Junko Augias, 2025\n"
+"Language-Team: Japanese (https://app.transifex.com/odoo/teams/41243/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: documents_project_sale
+#: model:documents.tag,name:documents_project_sale.documents_folder_tag_done
+msgid "Done/Archived"
+msgstr "完了/アーカイブ済"
+
+#. module: documents_project_sale
+#: model:documents.tag,name:documents_project_sale.documents_folder_tag_in_use
+msgid "In Use"
+msgstr "使用中"
+
+#. module: documents_project_sale
+#: model:documents.document,name:documents_project_sale.documents_folder_template_child_3
+msgid "Miscellaneous"
+msgstr "その他"
+
+#. module: documents_project_sale
+#: model:documents.tag,name:documents_project_sale.documents_folder_tag_unsorted
+msgid "New/Unsorted"
+msgstr "新規/未ソート"
+
+#. module: documents_project_sale
+#: model:documents.document,name:documents_project_sale.documents_folder_template_child_2
+msgid "Photos"
+msgstr "写真"
+
+#. module: documents_project_sale
+#: model:documents.document,name:documents_project_sale.documents_folder_template_child_1
+msgid "Plans"
+msgstr "計画"
+
+#. module: documents_project_sale
+#: model:account.analytic.account,name:documents_project_sale.analytic_renovation_architect
+#: model:project.project,name:documents_project_sale.project_project_renovation_architect
+msgid "Renovation Architect"
+msgstr "リノベーション建築家"
+
+#. module: documents_project_sale
+#: model:product.template,name:documents_project_sale.product_1
+msgid "Renovation Architect (Workspace Template)"
+msgstr "リノベーション・アーキテクト(作業区テンプレート)"
+
+#. module: documents_project_sale
+#: model:documents.document,name:documents_project_sale.documents_renovations_projects
+msgid "Renovation Projects"
+msgstr "リノベーションプロジェクト"
+
+#. module: documents_project_sale
+#: model:project.project,label_tasks:documents_project_sale.project_project_renovation_architect
+msgid "Tasks"
+msgstr "タスク"
+
+#. module: documents_project_sale
+#: model:documents.document,name:documents_project_sale.project_project_renovation_architect_document_1
+msgid "plan.jpg"
+msgstr "plan.jpg"
+
+#. module: documents_project_sale
+#: model:documents.document,name:documents_project_sale.project_task_visit_customer_document_1
+msgid "welcome.jpg"
+msgstr "welcome.jpg"

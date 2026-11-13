@@ -1,0 +1,222 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pos_restaurant_appointment
+# 
+# Translators:
+# Wil Odoo, 2025
+# Malaz Abuidris <msea@odoo.com>, 2025
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server saas~18.2+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-12 20:46+0000\n"
+"PO-Revision-Date: 2025-02-21 08:35+0000\n"
+"Last-Translator: Malaz Abuidris <msea@odoo.com>, 2025\n"
+"Language-Team: Arabic (https://app.transifex.com/odoo/teams/41243/ar/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#. module: pos_restaurant_appointment
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.calendar_event_view_gantt_booking_resource_inherited_restaurant_appointment
+msgid "<strong>Contact Information</strong>"
+msgstr "<strong>معلومات التواصل</strong> "
+
+#. module: pos_restaurant_appointment
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.calendar_event_view_gantt_booking_resource_inherited_restaurant_appointment
+msgid "<strong>Duration: </strong>"
+msgstr "<strong>المدة: </strong>"
+
+#. module: pos_restaurant_appointment
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.calendar_event_view_gantt_booking_resource_inherited_restaurant_appointment
+msgid "<strong>Email: </strong>"
+msgstr "<strong>البريد الإلكتروني: </strong> "
+
+#. module: pos_restaurant_appointment
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.calendar_event_view_gantt_booking_resource_inherited_restaurant_appointment
+msgid "<strong>Name: </strong>"
+msgstr "<strong>الاسم: </strong> "
+
+#. module: pos_restaurant_appointment
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.calendar_event_view_gantt_booking_resource_inherited_restaurant_appointment
+msgid "<strong>Phone: </strong>"
+msgstr "<strong>الهاتف: </strong> "
+
+#. module: pos_restaurant_appointment
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.calendar_event_view_gantt_booking_resource_inherited_restaurant_appointment
+msgid "<strong>Start Date: </strong>"
+msgstr "<strong>تاريخ البدء: </strong> "
+
+#. module: pos_restaurant_appointment
+#: model:ir.model,name:pos_restaurant_appointment.model_appointment_resource
+msgid "Appointment Resource"
+msgstr "مَورِد الموعد "
+
+#. module: pos_restaurant_appointment
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_pos_config__appointment_type_id
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_res_config_settings__pos_appointment_type_id
+msgid "Appointment Type"
+msgstr "نوع الموعد"
+
+#. module: pos_restaurant_appointment
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_restaurant_table__appointment_resource_id
+msgid "Appointment resource"
+msgstr "مورد الموعد "
+
+#. module: pos_restaurant_appointment
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.res_config_settings_view_form
+msgid "Appointment type"
+msgstr "نوع الموعد "
+
+#. module: pos_restaurant_appointment
+#. odoo-javascript
+#: code:addons/pos_restaurant_appointment/static/src/app/gantt_overrides/gantt_renderer.js:0
+msgid "Booked"
+msgstr "محجوز "
+
+#. module: pos_restaurant_appointment
+#. odoo-javascript
+#: code:addons/pos_restaurant_appointment/static/src/app/components/navbar/navbar.xml:0
+msgid "Booking"
+msgstr "الحجز "
+
+#. module: pos_restaurant_appointment
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.calendar_event_view_gantt_booking_resource_inherited_restaurant_appointment
+msgid "Booking Details"
+msgstr "تفاصيل الحجز "
+
+#. module: pos_restaurant_appointment
+#: model:ir.model,name:pos_restaurant_appointment.model_calendar_event
+msgid "Calendar Event"
+msgstr "فعالية التقويم "
+
+#. module: pos_restaurant_appointment
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.calendar_event_view_form_gantt_booking_inherited_restaurant_appointment
+msgid "Cancel"
+msgstr "إلغاء"
+
+#. module: pos_restaurant_appointment
+#. odoo-javascript
+#: code:addons/pos_restaurant_appointment/static/src/app/gantt_overrides/gantt_renderer.js:0
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.calendar_event_view_form_gantt_booking_inherited_restaurant_appointment
+msgid "Check In"
+msgstr "تسجيل الحضور"
+
+#. module: pos_restaurant_appointment
+#: model:ir.model,name:pos_restaurant_appointment.model_res_config_settings
+msgid "Config Settings"
+msgstr "تهيئة الإعدادات "
+
+#. module: pos_restaurant_appointment
+#. odoo-javascript
+#: code:addons/pos_restaurant_appointment/static/src/app/gantt_overrides/gantt_renderer.js:0
+msgid "Delete"
+msgstr "حذف"
+
+#. module: pos_restaurant_appointment
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_appointment_resource__display_name
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_calendar_event__display_name
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_pos_config__display_name
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_pos_session__display_name
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_restaurant_table__display_name
+msgid "Display Name"
+msgstr "اسم العرض "
+
+#. module: pos_restaurant_appointment
+#: model:appointment.question,name:pos_restaurant_appointment.appointment_type_restaurant_table_question_allergies
+msgid "Do you have any dietary preferences or restrictions ?"
+msgstr "هل لديك أي تفضيلات أو قيود تغذوية؟ "
+
+#. module: pos_restaurant_appointment
+#. odoo-javascript
+#: code:addons/pos_restaurant_appointment/static/src/app/gantt_overrides/gantt_renderer.js:0
+msgid "Edit"
+msgstr "تحرير"
+
+#. module: pos_restaurant_appointment
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.calendar_event_view_gantt_booking_resource_inherited_restaurant_appointment
+msgid "Event Details"
+msgstr "تفاصيل الفعالية "
+
+#. module: pos_restaurant_appointment
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_appointment_resource__id
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_calendar_event__id
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_pos_config__id
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_pos_session__id
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_res_config_settings__id
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_restaurant_table__id
+msgid "ID"
+msgstr "المُعرف"
+
+#. module: pos_restaurant_appointment
+#. odoo-javascript
+#: code:addons/pos_restaurant_appointment/static/src/app/gantt_overrides/gantt_renderer.js:0
+msgid "No Show"
+msgstr "لم يحضر "
+
+#. module: pos_restaurant_appointment
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_appointment_resource__pos_table_ids
+msgid "POS Table"
+msgstr "طاولة نقطة البيع "
+
+#. module: pos_restaurant_appointment
+#: model:ir.model,name:pos_restaurant_appointment.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr "تهيئة نقطة البيع "
+
+#. module: pos_restaurant_appointment
+#: model:ir.model,name:pos_restaurant_appointment.model_pos_session
+msgid "Point of Sale Session"
+msgstr "جلسة نقطة البيع"
+
+#. module: pos_restaurant_appointment
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_calendar_event__answers
+msgid "Q&A answers"
+msgstr "إجابات قسم الأسئلة والأجوبة "
+
+#. module: pos_restaurant_appointment
+#: model_terms:appointment.type,message_intro:pos_restaurant_appointment.appointment_type_restaurant_table
+msgid ""
+"Reserve your table at our bistro and enjoy a delightful dining experience at"
+" your convenience."
+msgstr ""
+
+#. module: pos_restaurant_appointment
+#: model:ir.model,name:pos_restaurant_appointment.model_restaurant_table
+msgid "Restaurant Table"
+msgstr "طاولة المطعم "
+
+#. module: pos_restaurant_appointment
+#: model:appointment.type,name:pos_restaurant_appointment.appointment_type_restaurant_table
+msgid "Table"
+msgstr "الطاولة "
+
+#. module: pos_restaurant_appointment
+#. odoo-javascript
+#: code:addons/pos_restaurant_appointment/static/src/app/gantt_overrides/gantt_renderer.js:0
+msgid "View"
+msgstr "أداة العرض"
+
+#. module: pos_restaurant_appointment
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.calendar_event_view_form_gantt_booking_inherited_restaurant_appointment
+msgid "e.g. \"John Doe\""
+msgstr ""
+
+#. module: pos_restaurant_appointment
+#: model:appointment.question,placeholder:pos_restaurant_appointment.appointment_type_restaurant_table_question_allergies
+msgid "e.g. Vegetarian, Lactose Intolerant, ..."
+msgstr "مثال: نباتي، حساسية اللاكتوز، ... "
+
+#. module: pos_restaurant_appointment
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.calendar_event_view_gantt_booking_resource_inherited_restaurant_appointment
+msgid "for:"
+msgstr "لـ: "
+
+#. module: pos_restaurant_appointment
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.calendar_event_view_gantt_booking_resource_inherited_restaurant_appointment
+msgid "hours"
+msgstr "ساعات"

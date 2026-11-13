@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="calendar_event_view_form_gantt_booking_inherited_restaurant_appointment" model="ir.ui.view">
+        <field name="name">calendar.event.view.form.gantt.booking.inherited.restaurant.appointment</field>
+        <field name="model">calendar.event</field>
+        <field name="mode">primary</field>
+        <field name="inherit_id" ref="appointment.calendar_event_view_form_gantt_booking"/>
+        <field name="arch" type="xml">
+            <xpath expr='//field[@name="name"]' position="attributes">
+                <attribute name="placeholder">e.g. "John Doe"</attribute>
+            </xpath>
+            <xpath expr='//field[@name="user_id"]' position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr='//field[@name="stop"]' position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//i[hasclass('fa-long-arrow-right')]" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr='//field[@name="partner_ids"]' position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr='//field[@name="appointment_status"]' position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+            <xpath expr="//div[hasclass('oe_title')]" position="before">
+                <div class="mb-3">
+                    <button name="set_attended" type="object" string="Check In" class="btn-secondary mx-1"/>
+                    <button name="set_cancelled" type="object" string="Cancel" class="btn-secondary"/>
+                    <field name="appointment_status" widget="statusbar" invisible="not appointment_type_id" required="appointment_type_id" style="float:right;"/>
+                </div>
+            </xpath>
+            <xpath expr='//field[@name="description"]' position="after">
+                <field name="answers"/>
+            </xpath>
+        </field>
+    </record>
+    <record id="calendar_event_view_gantt_booking_resource_inherited_restaurant_appointment" model="ir.ui.view">
+        <field name="name">calendar.event.view.gantt.booking.user.inherited.restaurant.appointment</field>
+        <field name="model">calendar.event</field>
+        <field name="mode">primary</field>
+        <field name="inherit_id" ref="appointment.calendar_event_view_gantt_booking_resource"/>
+        <field name="arch" type="xml">
+            <xpath expr="//gantt" position="attributes">
+                <attribute name="form_view_id">%(pos_restaurant_appointment.calendar_event_view_form_gantt_booking_inherited_restaurant_appointment)d</attribute>
+            </xpath>
+            <xpath expr="//field[@name='partner_ids']" position="after">
+                <field name="duration"/>
+            </xpath>
+            <xpath expr="//templates/div[@t-name='gantt-popover']" position="replace">
+                <div t-name="gantt-popover">
+                    <ul class="ps-1 mb-0 list-unstyled">
+                        <!--X_js field values are set directly in the renderer-->
+                        <t t-if="gantt_pill_contact_phone || gantt_pill_contact_email || gantt_pill_contact_name">
+                            <strong>Contact Information</strong>
+                            <li t-if="gantt_pill_contact_name"><strong>Name: </strong><t t-out="gantt_pill_contact_name"/></li>
+                            <li t-if="gantt_pill_contact_phone"><strong>Phone: </strong><t t-out="gantt_pill_contact_phone"/></li>
+                            <li t-if="gantt_pill_contact_email"><strong>Email: </strong><t t-out="gantt_pill_contact_email"/></li>
+                            <br/>
+                            <strong t-if="appointment_type_id">Booking Details</strong>
+                            <strong t-else="">Event Details</strong>
+                        </t>
+                        <li t-if="appointment_type_manage_capacity"><strong><t t-out="appointment_type_id[1]"/></strong> for: <t t-out="resource_total_capacity_reserved"/></li>
+                        <li><strong>Start Date: </strong> <t t-out="start.toFormat('f')"/></li>
+                        <t t-set="hours" t-value="Math.floor(duration)"/>
+                        <t t-set="minutes" t-value="Math.floor((duration - hours) * 60)"/>
+                        <li><strong>Duration: </strong> <t t-out="hours"/>:<t t-out='(minutes+"").padStart(2, "0")'/> hours </li>
+                    </ul>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

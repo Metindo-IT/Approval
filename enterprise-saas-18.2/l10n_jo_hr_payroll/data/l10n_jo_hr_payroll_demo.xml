@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="base.demo_company_jo" model="res.company" forcecreate="1">
+        <field name="name">My Jordan Company</field>
+        <field name="currency_id" ref="base.JOD"/>
+        <field name="country_id" ref="base.jo"/>
+    </record>
+
+    <record id="base.user_admin" model="res.users">
+        <field name="company_ids" eval="[(4, ref('base.demo_company_jo'))]"/>
+    </record>
+
+    <record id="base.user_demo" model="res.users">
+        <field name="company_ids" eval="[(4, ref('base.demo_company_jo'))]"/>
+    </record>
+
+    <record id="marketing_department_jo" model="hr.department">
+        <field name="name">Marketing</field>
+        <field name="company_id" ref="base.demo_company_jo"/>
+    </record>
+    <record id="accounting_department_jo" model="hr.department">
+        <field name="name">Admin</field>
+        <field name="company_id" ref="base.demo_company_jo"/>
+    </record>
+
+    <record id="job_marketing_manager_jo" model="hr.job">
+        <field name="name">Marketing Manager</field>
+        <field name="department_id" ref="marketing_department_jo"/>
+        <field name="company_id" ref="base.demo_company_jo"/>
+    </record>
+    <record id="job_accounting_manager_jo" model="hr.job">
+        <field name="name">Accounting Manager</field>
+        <field name="department_id" ref="accounting_department_jo"/>
+        <field name="company_id" ref="base.demo_company_jo"/>
+    </record>
+
+    <record id="hr_employee_hana_hashem" model="hr.employee">
+        <field name="name">Hana Hashem</field>
+        <field name="job_id" ref="job_marketing_manager_jo"/>
+        <field name="country_id" ref="base.jo"/>
+        <field name="company_id" ref="base.demo_company_jo"/>
+        <field name="gender">female</field>
+        <field name="department_id" ref="marketing_department_jo"/>
+        <field name="tz">Asia/Amman</field>
+    </record>
+    <record id="hr_employee_jad_abdullah" model="hr.employee">
+        <field name="name">Jad Abdullah</field>
+        <field name="job_id" ref="job_accounting_manager_jo"/>
+        <field name="country_id" ref="base.jo"/>
+        <field name="company_id" ref="base.demo_company_jo"/>
+        <field name="gender">male</field>
+        <field name="department_id" ref="accounting_department_jo"/>
+        <field name="tz">Asia/Amman</field>
+    </record>
+
+    <record id="hr_contract_hana_hashem" model="hr.contract">
+        <field name="name">Temporary Contract - Hana Hashem</field>
+        <field name="department_id" ref="marketing_department_jo"/>
+        <field name="employee_id" ref="hr_employee_hana_hashem"/>
+        <field name="job_id" ref="job_marketing_manager_jo"/>
+        <field name="wage">1500</field>
+        <field name="state">open</field>
+        <field name="hr_responsible_id" ref="base.user_demo"/>
+        <field name="company_id" ref="base.demo_company_jo"/>
+        <field name="l10n_jo_housing_allowance">400</field>
+        <field name="l10n_jo_transportation_allowance">50</field>
+        <field name="l10n_jo_other_allowances">300</field>
+        <field name="date_start" eval="DateTime.today() + relativedelta(months=-4, days=-10)"/>
+        <field name="contract_type_id" ref="hr.contract_type_temporary"/>
+    </record>
+    <record id="hr_contract_jad_abdullah" model="hr.contract">
+        <field name="name">Full-Time Contract - Jad Abdullah</field>
+        <field name="department_id" ref="accounting_department_jo"/>
+        <field name="employee_id" ref="hr_employee_jad_abdullah"/>
+        <field name="job_id" ref="job_accounting_manager_jo"/>
+        <field name="wage">2000</field>
+        <field name="state">open</field>
+        <field name="hr_responsible_id" ref="base.user_demo"/>
+        <field name="company_id" ref="base.demo_company_jo"/>
+        <field name="l10n_jo_housing_allowance">150</field>
+        <field name="l10n_jo_transportation_allowance">0</field>
+        <field name="l10n_jo_other_allowances">100</field>
+        <field name="date_start" eval="DateTime(DateTime.today().year-3,month=2,day=25)"/>
+        <field name="contract_type_id" ref="hr.contract_type_full_time"/>
+    </record>     
+</odoo>

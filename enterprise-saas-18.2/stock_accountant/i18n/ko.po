@@ -1,0 +1,115 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* stock_accountant
+# 
+# Translators:
+# Wil Odoo, 2025
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server saas~18.2+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-20 10:33+0000\n"
+"PO-Revision-Date: 2025-02-21 08:35+0000\n"
+"Last-Translator: Wil Odoo, 2025\n"
+"Language-Team: Korean (https://app.transifex.com/odoo/teams/41243/ko/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ko\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: stock_accountant
+#: model_terms:ir.ui.view,arch_db:stock_accountant.res_config_settings_view_form
+msgid "Automatic Accounting"
+msgstr "자동 회계 처리"
+
+#. module: stock_accountant
+#: model:ir.model,name:stock_accountant.model_account_bank_statement_line
+msgid "Bank Statement Line"
+msgstr "은행거래명세서 내역"
+
+#. module: stock_accountant
+#: model:ir.model,name:stock_accountant.model_res_config_settings
+msgid "Config Settings"
+msgstr "환경 설정"
+
+#. module: stock_accountant
+#: model:ir.model.fields,field_description:stock_accountant.field_account_bank_statement_line__display_name
+#: model:ir.model.fields,field_description:stock_accountant.field_res_config_settings__display_name
+msgid "Display Name"
+msgstr "표시명"
+
+#. module: stock_accountant
+#: model_terms:ir.ui.view,arch_db:stock_accountant.res_config_settings_view_form
+msgid "Enable automatic accounting entries for stock movements"
+msgstr "재고 이동 시 자동 회계 입력 기능을 활성화합니다."
+
+#. module: stock_accountant
+#: model:ir.model.fields,field_description:stock_accountant.field_res_config_settings__property_account_expense_categ_id
+msgid "Expense Account"
+msgstr "비용 계정"
+
+#. module: stock_accountant
+#: model_terms:ir.ui.view,arch_db:stock_accountant.res_config_settings_view_form
+msgid "General Account Properties"
+msgstr "일반 계정 과목"
+
+#. module: stock_accountant
+#: model:ir.model.fields,field_description:stock_accountant.field_account_bank_statement_line__id
+#: model:ir.model.fields,field_description:stock_accountant.field_res_config_settings__id
+msgid "ID"
+msgstr "ID"
+
+#. module: stock_accountant
+#: model:ir.model.fields,field_description:stock_accountant.field_res_config_settings__property_account_income_categ_id
+msgid "Income Account"
+msgstr "수입 계정"
+
+#. module: stock_accountant
+#: model:ir.model.fields,field_description:stock_accountant.field_res_config_settings__property_stock_account_input_categ_id
+msgid "Stock Input Account"
+msgstr "재고 입고 계정"
+
+#. module: stock_accountant
+#: model:ir.model.fields,field_description:stock_accountant.field_res_config_settings__property_stock_journal
+msgid "Stock Journal"
+msgstr "재고 전표"
+
+#. module: stock_accountant
+#: model:ir.model.fields,field_description:stock_accountant.field_res_config_settings__property_stock_account_output_categ_id
+msgid "Stock Output Account"
+msgstr "재고 출고 계정"
+
+#. module: stock_accountant
+#: model_terms:ir.ui.view,arch_db:stock_accountant.res_config_settings_view_form
+msgid "Stock Valuation"
+msgstr "재고 평가"
+
+#. module: stock_accountant
+#: model:ir.model.fields,field_description:stock_accountant.field_res_config_settings__property_stock_valuation_account_id
+msgid "Stock Valuation Account"
+msgstr "재고 평가 계정"
+
+#. module: stock_accountant
+#: model_terms:ir.ui.view,arch_db:stock_accountant.res_config_settings_view_form
+msgid ""
+"The below accounts will be used by default for automatic inventory "
+"valuation."
+msgstr "아래의 계정은 자동 재고가치평가의 기본값으로 사용됩니다."
+
+#. module: stock_accountant
+#: model:ir.model.fields,help:stock_accountant.field_res_config_settings__property_account_expense_categ_id
+msgid ""
+"The expense is accounted for when a vendor bill is validated, except in "
+"anglo-saxon accounting with perpetual inventory valuation in which case the "
+"expense (Cost of Goods Sold account) is recognized at the customer invoice "
+"validation."
+msgstr ""
+"업체 청구서 검증이 완료되면 비용이 처리됩니다. 단, 영미 회계를 사용하여 영구재고법을 적용하는 경우에는 고객 청구서를 검증할 때 비용 "
+"(매출원가 계정)을 인식합니다 . "
+
+#. module: stock_accountant
+#: model:ir.model.fields,help:stock_accountant.field_res_config_settings__property_account_income_categ_id
+msgid "This account will be used when validating a customer invoice."
+msgstr "고객 청구서를 검증할 때 사용하는 계정입니다."

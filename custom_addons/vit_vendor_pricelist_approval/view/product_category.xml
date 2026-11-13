@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="product_category_form_view_inherit_pricelist_approval" model="ir.ui.view">
+        <field name="name">product.category.form.pricelist.approval</field>
+        <field name="model">product.category</field>
+        <field name="inherit_id" ref="product.product_category_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//group[@name='first']" position="after">
+                <group name="pricelist_approval_group" string="Vendor Pricelist Approval">
+                    <field name="pricelist_approval_required"/>
+                    <field name="pricelist_code" invisible="not pricelist_approval_required" required="pricelist_approval_required"/>
+                </group>
+            </xpath>
+        </field>
+    </record>
+</odoo>

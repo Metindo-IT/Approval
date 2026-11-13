@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <!-- Mark As Draft -->
+        <record id="ir_actions_server_mark_as_draft" model="ir.actions.server" forcecreate="0">
+            <field name="name">Mark as draft</field>
+            <field name="sequence">10</field>
+            <field name="model_id" ref="documents.model_documents_document"/>
+            <field name="group_ids" eval="[Command.link(ref('base.group_user'))]"/>
+            <field name="state">multi</field>
+            <field name="child_ids">
+                <record id="ir_actions_server_mark_as_draft_code" model="ir.actions.server">
+                    <field name="name">Check conditions</field>
+                    <field name="state">code</field>
+                    <field name="code">
+tag_draft = env.ref('documents.documents_tag_draft', raise_if_not_found=False)
+if tag_draft and tag_draft in records.tag_ids:
+    raise UserError(env._("Impossible to mark documents as draft twice."))
+tag_validated = env.ref('documents.documents_tag_validated', raise_if_not_found=False)
+if tag_validated and tag_validated in records.tag_ids:
+    # Easier than remembering not to remove activities
+    raise UserError(env._("Impossible to mark validated documents as draft."))
+                    </field>
+                </record>
+                <record id="ir_actions_server_mark_as_draft_tag_remove_to_validate" model="ir.actions.server">
+                    <field name="name">Remove tag "To Validate"</field>
+                    <field name="state">object_write</field>
+                    <field name="update_path">tag_ids</field>
+                    <field name="update_m2m_operation">remove</field>
+                    <field name="resource_ref" ref="documents.documents_tag_to_validate"/>
+                </record>
+                <record id="ir_actions_server_mark_as_draft_tag_add_draft" model="ir.actions.server">
+                    <field name="name">Add tag "Draft"</field>
+                    <field name="state">object_write</field>
+                    <field name="update_path">tag_ids</field>
+                    <field name="update_m2m_operation">add</field>
+                    <field name="resource_ref" ref="documents.documents_tag_draft"/>
+                </record>
+                <record id="ir_actions_server_mark_as_draft_remove_activities" model="ir.actions.server">
+                    <field name="name">Mark activities as completed</field>
+                    <field name="state">code</field>
+                    <field name="code">
+for record in records:
+    record.activity_ids.action_feedback(feedback='completed')
+                    </field>
+                </record>
+            </field>
+        </record>
+
+        <!-- Ask for validation -->
+        <record id="ir_actions_server_ask_for_validation" model="ir.actions.server" forcecreate="0">
+            <field name="name">Ask for validation</field>
+            <field name="sequence">15</field>
+            <field name="model_id" ref="documents.model_documents_document"/>
+            <field name="group_ids" eval="[Command.link(ref('base.group_user'))]"/>
+            <field name="state">multi</field>
+            <field name="child_ids">
+                <record id="ir_actions_server_ask_for_validation_code" model="ir.actions.server">
+                    <field name="name">Check conditions</field>
+                    <field name="state">code</field>
+                    <field name="code">
+tag_to_validate = env.ref('documents.documents_tag_to_validate', raise_if_not_found=False)
+if tag_to_validate and tag_to_validate in records.tag_ids:
+    # Easier than remembering not to remove activities
+    raise UserError(env._("Impossible to ask for validation twice."))
+tag_deprecated = env.ref('documents.documents_tag_to_validate', raise_if_not_found=False)
+if tag_deprecated and tag_deprecated in records.tag_ids:
+    raise UserError(env._("Impossible to ask for validation on documents tagged with Deprecated."))
+                    </field>
+                </record>
+                <record id="ir_actions_server_ask_for_validation_tag_remove_validated" model="ir.actions.server">
+                    <field name="name">Remove tag "Validated"</field>
+                    <field name="state">object_write</field>
+                    <field name="update_path">tag_ids</field>
+                    <field name="update_m2m_operation">remove</field>
+                    <field name="resource_ref" ref="documents.documents_tag_validated"/>
+                </record>
+                <record id="ir_actions_server_ask_for_validation_tag_remove_draft" model="ir.actions.server">
+                    <field name="name">Remove tag "Draft"</field>
+                    <field name="state">object_write</field>
+                    <field name="update_path">tag_ids</field>
+                    <field name="update_m2m_operation">remove</field>
+                    <field name="resource_ref" ref="documents.documents_tag_draft"/>
+                </record>
+                <record id="ir_actions_server_ask_for_validation_tag_add_to_validate" model="ir.actions.server">
+                    <field name="name">Add tag "To Validate"</field>
+                    <field name="state">object_write</field>
+                    <field name="update_path">tag_ids</field>
+                    <field name="update_m2m_operation">add</field>
+                    <field name="resource_ref" ref="documents.documents_tag_to_validate"/>
+                </record>
+                <record id="ir_actions_server_ask_for_validation_create_activity" model="ir.actions.server">
+                    <field name="name">Add "To Validate" activity</field>
+                    <field name="state">next_activity</field>
+                    <field name="activity_type_id" ref="documents.mail_documents_activity_data_tv"/>
+                </record>
+            </field>
+        </record>
+
+        <!-- Validate -->
+        <record id="ir_actions_server_validate" model="ir.actions.server" forcecreate="0">
+            <field name="name">Validate</field>
+            <field name="sequence">20</field>
+            <field name="model_id" ref="documents.model_documents_document"/>
+            <field name="group_ids" eval="[Command.link(ref('base.group_user'))]"/>
+            <field name="state">multi</field>
+            <field name="child_ids">
+                <record id="ir_actions_server_validate_code" model="ir.actions.server">
+                    <field name="name">Check conditions</field>
+                    <field name="state">code</field>
+                    <field name="code">
+tag_validated = env.ref('documents.documents_tag_validated', raise_if_not_found=False)
+if tag_validated and tag_validated in records.tag_ids:
+    # Easier than remembering not to remove activities
+    raise UserError(env._("Document has already been validated."))
+tag_deprecated = env.ref('documents.documents_tag_deprecated', raise_if_not_found=False)
+if tag_deprecated and tag_deprecated in records.tag_ids:
+    raise UserError(env._("Impossible to validate documents tagged with Deprecated."))
+                    </field>
+                </record>
+                <record id="ir_actions_server_validate_tag_remove_draft" model="ir.actions.server">
+                    <field name="name">Remove tag "Draft"</field>
+                    <field name="state">object_write</field>
+                    <field name="update_path">tag_ids</field>
+                    <field name="update_m2m_operation">remove</field>
+                    <field name="resource_ref" ref="documents.documents_tag_draft"/>
+                </record>
+                <record id="ir_actions_server_validate_tag_remove_to_validate" model="ir.actions.server">
+                    <field name="name">Remove tag "To Validate"</field>
+                    <field name="state">object_write</field>
+                    <field name="update_path">tag_ids</field>
+                    <field name="update_m2m_operation">remove</field>
+                    <field name="resource_ref" ref="documents.documents_tag_to_validate"/>
+                </record>
+                <record id="ir_actions_server_validate_tag_add_validated" model="ir.actions.server">
+                    <field name="name">Add tag "Validated"</field>
+                    <field name="state">object_write</field>
+                    <field name="update_path">tag_ids</field>
+                    <field name="update_m2m_operation">add</field>
+                    <field name="resource_ref" ref="documents.documents_tag_validated"/>
+                </record>
+                <record id="ir_actions_server_validate_remove_activities" model="ir.actions.server">
+                    <field name="name">Mark activities as completed</field>
+                    <field name="state">code</field>
+                    <field name="code">
+for record in records:
+    record.activity_ids.action_feedback(feedback='completed')
+                    </field>
+                </record>
+            </field>
+        </record>
+
+        <!-- Deprecate -->
+        <record id="ir_actions_server_create_project_deprecate" model="ir.actions.server" forcecreate="0">
+            <field name="name">Archive</field>
+            <field name="sequence">25</field>
+            <field name="model_id" ref="documents.model_documents_document"/>
+            <field name="group_ids" eval="[Command.link(ref('base.group_user'))]"/>
+            <field name="state">multi</field>
+            <field name="child_ids">
+                <record id="ir_actions_server_create_project_deprecate_tag_remove_to_validate" model="ir.actions.server">
+                    <field name="name">Remove tag "To Validate"</field>
+                    <field name="state">object_write</field>
+                    <field name="update_path">tag_ids</field>
+                    <field name="update_m2m_operation">remove</field>
+                    <field name="resource_ref" ref="documents.documents_tag_to_validate"/>
+                </record>
+                <record id="ir_actions_server_create_project_deprecate_tag_remove_validated" model="ir.actions.server">
+                    <field name="name">Remove tag "Validated"</field>
+                    <field name="state">object_write</field>
+                    <field name="update_path">tag_ids</field>
+                    <field name="update_m2m_operation">remove</field>
+                    <field name="resource_ref" ref="documents.documents_tag_validated"/>
+                </record>
+                <record id="ir_actions_server_create_project_deprecate_tag_remove_draft" model="ir.actions.server">
+                    <field name="name">Remove tag "Draft"</field>
+                    <field name="state">object_write</field>
+                    <field name="update_path">tag_ids</field>
+                    <field name="update_m2m_operation">remove</field>
+                    <field name="resource_ref" ref="documents.documents_tag_draft"/>
+                </record>
+                <record id="ir_actions_server_create_project_deprecate_tag_add_deprecated" model="ir.actions.server">
+                    <field name="name">Add tag "Deprecated"</field>
+                    <field name="state">object_write</field>
+                    <field name="update_path">tag_ids</field>
+                    <field name="update_m2m_operation">add</field>
+                    <field name="resource_ref" ref="documents.documents_tag_deprecated"/>
+                </record>
+                <record id="ir_actions_server_create_project_deprecate_remove_activities" model="ir.actions.server">
+                    <field name="name">Mark activities as completed</field>
+                    <field name="state">code</field>
+                    <field name="code">
+for record in records:
+    record.activity_ids.action_feedback(feedback='completed')
+                    </field>
+                </record>
+            </field>
+        </record>
+
+    </data>
+</odoo>

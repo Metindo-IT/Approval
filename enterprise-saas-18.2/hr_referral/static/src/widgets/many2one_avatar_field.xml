@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="mail.ReferralKanbanMany2OneAvatarUserField" t-inherit="mail.KanbanMany2OneAvatarUserField" t-inherit-mode="primary">
+        <xpath expr="//span[hasclass('o_m2o_avatar')]" position="attributes">
+            <attribute name="style" add="justify-content: flex-end;" separator=" "/>
+        </xpath>
+        <xpath expr="//img[hasclass('rounded')]" position="attributes">
+            <attribute name="class" add="h-50 w-50 m-0" separator=" "/>
+        </xpath>
+    </t>
+
+</templates>

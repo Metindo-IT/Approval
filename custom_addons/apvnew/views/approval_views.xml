@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_approval_form_inherit_apvnew" model="ir.ui.view">
+        <name>approval.request.form.inherit.apvnew</name>
+        <model>approval.request</model>
+        <inherit_id ref="approvals.approval_request_view_form"/>
+        <arch type="xml">
+            
+            <xpath expr="//field[@name='partner_id']" position="after">
+                
+            </xpath>
+        </arch>
+    </record>
+</odoo>

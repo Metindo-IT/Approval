@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_purchase_pricelist_approval" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.inherit.pricelist.approval</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="purchase.res_config_settings_view_form_purchase"/>
+        <field name="arch" type="xml">
+            <xpath expr="//app[@name='purchase']" position="inside">
+                <block title="Vendor Pricelist Approval" name="vendor_pricelist_approval_setting_container">
+                    <setting string="Approver Tahap 1 (Purchasing)"
+                             help="User Purchasing yang memeriksa harga dan lampiran (batas waktu default 2 hari).">
+                        <field name="pricelist_approver_1_ids" widget="many2many_tags"/>
+                    </setting>
+                    <setting string="Approver Tahap 2 (Marketing)"
+                             help="User Marketing yang memeriksa perbandingan harga beli vs jual secara paralel.">
+                        <field name="pricelist_approver_2_ids" widget="many2many_tags"/>
+                    </setting>
+                    <setting string="Approver Tahap 3 (Finance / FA)"
+                             help="User Finance yang melakukan persetujuan akhir hingga harga menjadi aktif.">
+                        <field name="pricelist_approver_3_ids" widget="many2many_tags"/>
+                    </setting>
+                    <setting string="Follower"
+                             help="Partner yang otomatis menjadi follower pada dokumen Pricelist Approval.">
+                        <field name="pricelist_follower_ids" widget="many2many_tags"/>
+                    </setting>
+                    <setting string="Batas Waktu Approval (Hari)"
+                             help="Batas waktu pengerjaan masing-masing tahap sebelum pengingat dikirim.">
+                        <div class="content-group">
+                            <div class="row mt8">
+                                <label for="pricelist_deadline_1" class="col-lg-5 o_light_label"/>
+                                <field name="pricelist_deadline_1"/>
+                            </div>
+                            <div class="row mt8">
+                                <label for="pricelist_deadline_2" class="col-lg-5 o_light_label"/>
+                                <field name="pricelist_deadline_2"/>
+                            </div>
+                        </div>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,274 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pos_settle_due
+# 
+# Translators:
+# Ryoko Tsuda <ryoko@quartile.co>, 2025
+# Wil Odoo, 2025
+# Junko Augias, 2025
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server saas~18.2+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-20 10:31+0000\n"
+"PO-Revision-Date: 2025-02-21 08:35+0000\n"
+"Last-Translator: Junko Augias, 2025\n"
+"Language-Team: Japanese (https://app.transifex.com/odoo/teams/41243/ja/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: ja\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: pos_settle_due
+#. odoo-javascript
+#: code:addons/pos_settle_due/static/src/app/screens/partner_list/partner_line/partner_line.xml:0
+msgid "(with cart:"
+msgstr "(カートで:"
+
+#. module: pos_settle_due
+#: model_terms:ir.ui.view,arch_db:pos_settle_due.customer_due_pos_order_list_view
+msgid "Amount total"
+msgstr "金額合計"
+
+#. module: pos_settle_due
+#: model:ir.model,name:pos_settle_due.model_res_company
+msgid "Companies"
+msgstr "会社"
+
+#. module: pos_settle_due
+#: model:ir.model,name:pos_settle_due.model_res_partner
+msgid "Contact"
+msgstr "連絡先"
+
+#. module: pos_settle_due
+#: model:ir.model,website_form_label:pos_settle_due.model_res_partner
+msgid "Create a Customer"
+msgstr "顧客を作成する"
+
+#. module: pos_settle_due
+#. odoo-javascript
+#: code:addons/pos_settle_due/static/src/app/screens/partner_list/partner_list.xml:0
+msgid "Credit limit reached!"
+msgstr "与信限度に達しました！"
+
+#. module: pos_settle_due
+#. odoo-javascript
+#: code:addons/pos_settle_due/static/src/app/screens/partner_list/partner_line/partner_line.xml:0
+msgid "Credit limit:"
+msgstr "与信限度:"
+
+#. module: pos_settle_due
+#: model:product.template,name:pos_settle_due.product_product_deposit_product_template
+msgid "Deposit"
+msgstr "デポジット"
+
+#. module: pos_settle_due
+#: model:ir.model.fields,field_description:pos_settle_due.field_pos_config__deposit_product_id
+msgid "Deposit Product"
+msgstr "頭金プロダクト"
+
+#. module: pos_settle_due
+#. odoo-javascript
+#: code:addons/pos_settle_due/static/src/app/screens/partner_list/partner_line/partner_line.xml:0
+msgid "Deposit money"
+msgstr "頭金"
+
+#. module: pos_settle_due
+#. odoo-javascript
+#: code:addons/pos_settle_due/static/src/app/screens/partner_list/partner_line/partner_line.xml:0
+msgid "Deposited:"
+msgstr "デポジット入金済:"
+
+#. module: pos_settle_due
+#: model:ir.model.fields,field_description:pos_settle_due.field_ir_ui_view__display_name
+#: model:ir.model.fields,field_description:pos_settle_due.field_pos_config__display_name
+#: model:ir.model.fields,field_description:pos_settle_due.field_pos_order__display_name
+#: model:ir.model.fields,field_description:pos_settle_due.field_pos_order_line__display_name
+#: model:ir.model.fields,field_description:pos_settle_due.field_pos_session__display_name
+#: model:ir.model.fields,field_description:pos_settle_due.field_res_company__display_name
+#: model:ir.model.fields,field_description:pos_settle_due.field_res_partner__display_name
+msgid "Display Name"
+msgstr "表示名"
+
+#. module: pos_settle_due
+#. odoo-javascript
+#: code:addons/pos_settle_due/static/src/app/screens/payment_screen/payment_screen.js:0
+msgid "Do you want to deposit %s to %s?"
+msgstr "%sを%sに入金しますか？"
+
+#. module: pos_settle_due
+#. odoo-javascript
+#: code:addons/pos_settle_due/static/src/app/screens/payment_screen/payment_screen.js:0
+msgid ""
+"Do you want to deposit money to a specific customer? If so, first select "
+"him/her."
+msgstr "特定の顧客にデポジットを入金しますか？ まず対象者を選択して下さい。"
+
+#. module: pos_settle_due
+#: model:ir.model.fields,field_description:pos_settle_due.field_pos_order__customer_due_total
+msgid "Due"
+msgstr "未払"
+
+#. module: pos_settle_due
+#. odoo-javascript
+#: code:addons/pos_settle_due/static/src/app/screens/partner_list/partner_line/partner_line.js:0
+#: code:addons/pos_settle_due/static/src/app/screens/payment_screen/payment_screen.js:0
+msgid "Error"
+msgstr "エラー"
+
+#. module: pos_settle_due
+#: model:ir.model.fields,field_description:pos_settle_due.field_ir_ui_view__id
+#: model:ir.model.fields,field_description:pos_settle_due.field_pos_config__id
+#: model:ir.model.fields,field_description:pos_settle_due.field_pos_order__id
+#: model:ir.model.fields,field_description:pos_settle_due.field_pos_order_line__id
+#: model:ir.model.fields,field_description:pos_settle_due.field_pos_session__id
+#: model:ir.model.fields,field_description:pos_settle_due.field_res_company__id
+#: model:ir.model.fields,field_description:pos_settle_due.field_res_partner__id
+msgid "ID"
+msgstr "ID"
+
+#. module: pos_settle_due
+#: model:ir.model.fields,field_description:pos_settle_due.field_pos_order__init_customer_due_total
+msgid "Initial due (before any settlement)"
+msgstr "初期未払い額(精算前)"
+
+#. module: pos_settle_due
+#: model:ir.model.fields,field_description:pos_settle_due.field_pos_order__settled_orders_count
+msgid "Number of settled orders"
+msgstr "精算済オーダ数"
+
+#. module: pos_settle_due
+#. odoo-javascript
+#: code:addons/pos_settle_due/static/src/app/screens/partner_list/partner_line/partner_line.js:0
+msgid "One of the selected orders is already being settled."
+msgstr "選択されたオーダのうち1つはすでに精算中です。"
+
+#. module: pos_settle_due
+#: model_terms:ir.ui.view,arch_db:pos_settle_due.customer_due_pos_order_list_view
+msgid "POS Orders"
+msgstr "POSオーダ"
+
+#. module: pos_settle_due
+#: model:ir.model,name:pos_settle_due.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr "POS設定"
+
+#. module: pos_settle_due
+#: model:ir.model,name:pos_settle_due.model_pos_order_line
+msgid "Point of Sale Order Lines"
+msgstr "POS注文ライン"
+
+#. module: pos_settle_due
+#: model:ir.model,name:pos_settle_due.model_pos_order
+msgid "Point of Sale Orders"
+msgstr "POSオーダ"
+
+#. module: pos_settle_due
+#: model:ir.model,name:pos_settle_due.model_pos_session
+msgid "Point of Sale Session"
+msgstr "POSセッション"
+
+#. module: pos_settle_due
+#. odoo-javascript
+#: code:addons/pos_settle_due/static/src/app/services/pos_store.js:0
+msgid "Select the payment method to deposit money"
+msgstr "デポジット入金する支払方法を選択して下さい。"
+
+#. module: pos_settle_due
+#: model:product.template,name:pos_settle_due.product_product_settle_product_template
+msgid "Settle Due"
+msgstr "未払い額を精算"
+
+#. module: pos_settle_due
+#: model:ir.model.fields,field_description:pos_settle_due.field_pos_config__settle_due_product_id
+msgid "Settle Due Product"
+msgstr "未払いプロダクトを精算"
+
+#. module: pos_settle_due
+#. odoo-javascript
+#: code:addons/pos_settle_due/static/src/app/screens/partner_list/partner_line/partner_line.xml:0
+msgid "Settle due accounts"
+msgstr "未払金の精算"
+
+#. module: pos_settle_due
+#. odoo-javascript
+#: code:addons/pos_settle_due/static/src/app/screens/payment_screen/payment_screen.js:0
+msgid "Settle due orderlines"
+msgstr "未払いオーダ明細を精算"
+
+#. module: pos_settle_due
+#: model:ir.model.fields,field_description:pos_settle_due.field_pos_order_line__settled_order_id
+msgid "Settled Order"
+msgstr "精算済オーダ"
+
+#. module: pos_settle_due
+#: model:ir.model.fields,field_description:pos_settle_due.field_pos_order__settled_order_line_ids
+msgid "Settled Order Lines"
+msgstr "精算済オーダ明細"
+
+#. module: pos_settle_due
+#. odoo-python
+#: code:addons/pos_settle_due/models/pos_order.py:0
+#: model_terms:ir.ui.view,arch_db:pos_settle_due.pos_order_form_inherit_pos_settle_due
+msgid "Settled Orders"
+msgstr "精算済オーダ一覧"
+
+#. module: pos_settle_due
+#. odoo-javascript
+#: code:addons/pos_settle_due/static/src/app/screens/payment_screen/payment_screen.js:0
+msgid "The order is empty"
+msgstr "オーダは空です"
+
+#. module: pos_settle_due
+#. odoo-javascript
+#: code:addons/pos_settle_due/static/src/app/screens/payment_screen/payment_screen.js:0
+msgid ""
+"The selected customer is not in the list of partners of the ongoing settling"
+" orderlines."
+msgstr "選択された顧客は、現在精算中のオーダ明細の取引先リストに含まれていません。"
+
+#. module: pos_settle_due
+#: model:ir.model.fields,help:pos_settle_due.field_pos_config__settle_due_product_id
+msgid "This product is used as to settle due of customer account."
+msgstr "このプロダクトは、顧客アカウントの未払額を精算するために使用されます。"
+
+#. module: pos_settle_due
+#: model:ir.model.fields,help:pos_settle_due.field_pos_config__deposit_product_id
+msgid "This product is used to deposit money on customer account."
+msgstr "このプロダクトは顧客アカウントに入金するために使用されます。"
+
+#. module: pos_settle_due
+#: model_terms:ir.ui.view,arch_db:pos_settle_due.customer_due_pos_order_list_view
+msgid "Total due"
+msgstr "未払合計"
+
+#. module: pos_settle_due
+#. odoo-javascript
+#: code:addons/pos_settle_due/static/src/app/screens/partner_list/partner_line/partner_line.xml:0
+msgid "Total due:"
+msgstr "未払合計:"
+
+#. module: pos_settle_due
+#: model:ir.model,name:pos_settle_due.model_ir_ui_view
+msgid "View"
+msgstr "ビュー"
+
+#. module: pos_settle_due
+#. odoo-javascript
+#: code:addons/pos_settle_due/static/src/app/screens/payment_screen/payment_screen.js:0
+msgid "Yes"
+msgstr "はい"
+
+#. module: pos_settle_due
+#. odoo-javascript
+#: code:addons/pos_settle_due/static/src/app/screens/payment_screen/payment_screen.js:0
+msgid "You cannot refund a deposit/settling order."
+msgstr "デポジット/精算中のオーダの払戻しはできません。"
+
+#. module: pos_settle_due
+#. odoo-python
+#: code:addons/pos_settle_due/models/pos_order.py:0
+msgid "id"
+msgstr "ID"

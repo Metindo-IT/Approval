@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<template id="article_searchbar_input_snippet_options" inherit_id="website.searchbar_input_snippet_options" name="Articles search bar snippet options">
+    <xpath expr="//div[@data-js='SearchBar']/we-select[@data-name='scope_opt']" position="inside">
+        <we-button data-set-search-type="knowledge"
+                data-select-data-attribute="knowledge"
+                data-name="search_article_opt"
+                data-form-action="/website/search/knowledge">Knowledge articles</we-button>
+    </xpath>
+</template>
+
+</odoo>

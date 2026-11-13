@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates xml:space="preserve">
+
+    <t t-name="project_enterprise.TaskGanttRendererControls" t-inherit="web_gantt.GanttRendererControls">
+        <xpath expr="//div[hasclass('o_gantt_renderer_controls')]" position="inside">
+            <button
+                class="o_gantt_button_critical_path btn"
+                t-att-class="{
+                    'btn-sm btn-link p-1': env.isSmall,
+                    'btn-primary active': model.criticalTaskIds,
+                    'btn-secondary': !model.criticalTaskIds,
+                }"
+                data-tooltip="Longest path between tasks matching the current filter"
+                data-hotkey="c"
+                t-on-click="props.getCriticalPath"
+                t-if="props.getCriticalPath"
+            >
+                <t t-if="!env.isSmall">Critical Path</t>
+                <span t-else="">
+                    <i class="fa fa-random" role="img" aria-label="Critical Path" title="Critical Path"/>
+                </span>
+            </button>
+        </xpath>
+    </t>
+
+</templates>

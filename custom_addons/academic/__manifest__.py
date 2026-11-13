@@ -1,0 +1,22 @@
+{
+    'name': 'Academic',
+    'version': '1.0',
+    'summary': 'Course, Session & Attendee',
+    'author': '[umar]',
+    'category': 'Education',
+    'depends': ['base'],
+    'data': [
+        'security/academic_security.xml',
+        'security/ir.model.access.csv',
+        'views/course_views.xml',
+        'views/session_views.xml',
+        'views/attendee_views.xml',
+        'views/partner_views.xml',
+        'wizard/create_attendee_views.xml',
+        'report/session_report.xml',
+        'views/menu.xml',
+    ],
+    'installable': True,
+    'application': True,
+    'license': 'LGPL-3',
+}

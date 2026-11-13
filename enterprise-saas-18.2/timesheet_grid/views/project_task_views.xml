@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="project_task_view_form" model="ir.ui.view">
+            <field name="name">project.task.view.form.inherit.sale.timesheet.enterprise</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project_enterprise.project_task_view_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='stage_id']" position='before'>
+                    <field name="company_id" invisible="1"/>
+                    <field name="display_timesheet_timer" invisible="1"/>
+                    <field name="timer_pause" invisible="1" />
+                    <field name="display_timer_start_primary" invisible="1"/>
+                    <field name="display_timer_start_secondary" invisible="1"/>
+                    <field name="display_timer_stop" invisible="1"/>
+                    <field name="display_timer_pause" invisible="1"/>
+                    <field name="display_timer_resume" invisible="1"/>
+                    <button class="btn-primary" name="action_timer_start" type="object" string="Start" data-hotkey="z"
+                        invisible="not display_timer_start_primary or encode_uom_in_days" groups="hr_timesheet.group_hr_timesheet_user"/>
+                    <button class="btn-secondary" name="action_timer_start" type="object" string="Start" data-hotkey="z"
+                        invisible="not display_timer_start_secondary or encode_uom_in_days" groups="hr_timesheet.group_hr_timesheet_user"/>
+                    <button class="btn-primary o_fsm_stop" name="action_timer_stop" type="object" string="Stop" data-hotkey="z"
+                        invisible="not display_timer_stop or encode_uom_in_days" groups="hr_timesheet.group_hr_timesheet_user"/>
+                    <button class="btn-secondary" name="action_timer_pause" type="object" string="Pause" data-hotkey="w"
+                        invisible="not display_timer_pause or encode_uom_in_days" groups="hr_timesheet.group_hr_timesheet_user"/>
+                    <button class="btn-secondary" name="action_timer_resume" type="object" string="Resume" data-hotkey="w"
+                        invisible="not display_timer_resume or encode_uom_in_days" groups="hr_timesheet.group_hr_timesheet_user"/>
+                    <field name="timer_start" widget="timer_start_field" class="align-self-center me-auto ms-2 h2" groups="hr_timesheet.group_hr_timesheet_user"/>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="project_task_view_gantt_timesheet" model="ir.ui.view">
+            <field name="name">project.task.view.gantt</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project_enterprise.project_task_view_gantt"/>
+            <field name="arch" type="xml">
+                <xpath expr="//gantt" position="attributes">
+                    <attribute name="progress_bar">user_ids,project_id</attribute>
+                    <attribute name="progress">progress</attribute>
+                </xpath>
+                <xpath expr="//field[@name='partner_id']" position="after">
+                    <field name="progress"/>
+                    <field name="effective_hours"/>
+                    <field name="total_hours_spent"/>
+                    <field name="encode_uom_in_days"/>
+                    <field name="allow_timesheets"/>
+                </xpath>
+                <xpath expr="//div[@name='allocated_hours']" position="attributes">
+                    <attribute name="groups">hr_timesheet.group_hr_timesheet_user</attribute>
+                </xpath>
+                <xpath expr="//div[@name='allocated_hours']" position="after">
+                    <div t-if="allow_timesheets" groups="hr_timesheet.group_hr_timesheet_user">
+                        <strong>Time Spent — </strong>
+                        <t t-esc="total_hours_spent_formatted"/>
+                        (<t t-esc="progressFormatted"/>%)
+                    </div>
+                </xpath>
+            </field>
+        </record>
+
+        <record id="project_task_view_kanban" model="ir.ui.view">
+            <field name="name">project.task.kanban.timer</field>
+            <field name="model">project.task</field>
+            <field name="inherit_id" ref="project.view_task_kanban"/>
+            <field name="arch" type="xml">
+                <xpath expr="//footer/div" position="inside">
+                    <field name="display_timesheet_timer" invisible="1"/>
+                    <field name="timer_start" invisible="1"/>
+                    <field name="timer_pause" invisible="1"/>
+                    <t t-if="record.display_timesheet_timer &amp;&amp; record.timer_pause.raw_value">
+                        <i class="fa fa-pause text-warning" title="Timer is Paused"></i>
+                    </t>
+                    <t t-elif="record.display_timesheet_timer &amp;&amp; record.timer_start.raw_value">
+                        <i class="fa fa-play text-success" title="Timer is Running"></i>
+                    </t>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>

@@ -1,0 +1,225 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* pos_restaurant_appointment
+# 
+# Translators:
+# Wil Odoo, 2025
+# Martin Trigaux, 2025
+# Thi Huong Nguyen, 2025
+# 
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server saas~18.2+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-12 20:46+0000\n"
+"PO-Revision-Date: 2025-02-21 08:35+0000\n"
+"Last-Translator: Thi Huong Nguyen, 2025\n"
+"Language-Team: Vietnamese (https://app.transifex.com/odoo/teams/41243/vi/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#. module: pos_restaurant_appointment
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.calendar_event_view_gantt_booking_resource_inherited_restaurant_appointment
+msgid "<strong>Contact Information</strong>"
+msgstr "<strong>Thông tin liên hệ</strong>"
+
+#. module: pos_restaurant_appointment
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.calendar_event_view_gantt_booking_resource_inherited_restaurant_appointment
+msgid "<strong>Duration: </strong>"
+msgstr "<strong>Thời lượng: </strong>"
+
+#. module: pos_restaurant_appointment
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.calendar_event_view_gantt_booking_resource_inherited_restaurant_appointment
+msgid "<strong>Email: </strong>"
+msgstr "<strong>Email: </strong>"
+
+#. module: pos_restaurant_appointment
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.calendar_event_view_gantt_booking_resource_inherited_restaurant_appointment
+msgid "<strong>Name: </strong>"
+msgstr "<strong>Tên: </strong>"
+
+#. module: pos_restaurant_appointment
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.calendar_event_view_gantt_booking_resource_inherited_restaurant_appointment
+msgid "<strong>Phone: </strong>"
+msgstr "<strong>Điện thoại: </strong>"
+
+#. module: pos_restaurant_appointment
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.calendar_event_view_gantt_booking_resource_inherited_restaurant_appointment
+msgid "<strong>Start Date: </strong>"
+msgstr "<strong>Ngày bắt đầu:</strong>"
+
+#. module: pos_restaurant_appointment
+#: model:ir.model,name:pos_restaurant_appointment.model_appointment_resource
+msgid "Appointment Resource"
+msgstr "Appointment Resource"
+
+#. module: pos_restaurant_appointment
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_pos_config__appointment_type_id
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_res_config_settings__pos_appointment_type_id
+msgid "Appointment Type"
+msgstr "Loại lịch hẹn"
+
+#. module: pos_restaurant_appointment
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_restaurant_table__appointment_resource_id
+msgid "Appointment resource"
+msgstr "Appointment resource"
+
+#. module: pos_restaurant_appointment
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.res_config_settings_view_form
+msgid "Appointment type"
+msgstr "Loại lịch hẹn"
+
+#. module: pos_restaurant_appointment
+#. odoo-javascript
+#: code:addons/pos_restaurant_appointment/static/src/app/gantt_overrides/gantt_renderer.js:0
+msgid "Booked"
+msgstr "Đã đặt"
+
+#. module: pos_restaurant_appointment
+#. odoo-javascript
+#: code:addons/pos_restaurant_appointment/static/src/app/components/navbar/navbar.xml:0
+msgid "Booking"
+msgstr "Đặt trước"
+
+#. module: pos_restaurant_appointment
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.calendar_event_view_gantt_booking_resource_inherited_restaurant_appointment
+msgid "Booking Details"
+msgstr "Thông tin đặt lịch"
+
+#. module: pos_restaurant_appointment
+#: model:ir.model,name:pos_restaurant_appointment.model_calendar_event
+msgid "Calendar Event"
+msgstr "Sự kiện trên lịch"
+
+#. module: pos_restaurant_appointment
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.calendar_event_view_form_gantt_booking_inherited_restaurant_appointment
+msgid "Cancel"
+msgstr "Hủy"
+
+#. module: pos_restaurant_appointment
+#. odoo-javascript
+#: code:addons/pos_restaurant_appointment/static/src/app/gantt_overrides/gantt_renderer.js:0
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.calendar_event_view_form_gantt_booking_inherited_restaurant_appointment
+msgid "Check In"
+msgstr "Check-in"
+
+#. module: pos_restaurant_appointment
+#: model:ir.model,name:pos_restaurant_appointment.model_res_config_settings
+msgid "Config Settings"
+msgstr "Cài đặt cấu hình"
+
+#. module: pos_restaurant_appointment
+#. odoo-javascript
+#: code:addons/pos_restaurant_appointment/static/src/app/gantt_overrides/gantt_renderer.js:0
+msgid "Delete"
+msgstr "Xoá"
+
+#. module: pos_restaurant_appointment
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_appointment_resource__display_name
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_calendar_event__display_name
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_pos_config__display_name
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_pos_session__display_name
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_res_config_settings__display_name
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_restaurant_table__display_name
+msgid "Display Name"
+msgstr "Tên hiển thị"
+
+#. module: pos_restaurant_appointment
+#: model:appointment.question,name:pos_restaurant_appointment.appointment_type_restaurant_table_question_allergies
+msgid "Do you have any dietary preferences or restrictions ?"
+msgstr "Bạn có bất kỳ sở thích hoặc hạn chế nào về chế độ ăn uống không?"
+
+#. module: pos_restaurant_appointment
+#. odoo-javascript
+#: code:addons/pos_restaurant_appointment/static/src/app/gantt_overrides/gantt_renderer.js:0
+msgid "Edit"
+msgstr "Chỉnh sửa"
+
+#. module: pos_restaurant_appointment
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.calendar_event_view_gantt_booking_resource_inherited_restaurant_appointment
+msgid "Event Details"
+msgstr "Thông tin sự kiện"
+
+#. module: pos_restaurant_appointment
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_appointment_resource__id
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_calendar_event__id
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_pos_config__id
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_pos_session__id
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_res_config_settings__id
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_restaurant_table__id
+msgid "ID"
+msgstr "ID"
+
+#. module: pos_restaurant_appointment
+#. odoo-javascript
+#: code:addons/pos_restaurant_appointment/static/src/app/gantt_overrides/gantt_renderer.js:0
+msgid "No Show"
+msgstr "Vắng mặt"
+
+#. module: pos_restaurant_appointment
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_appointment_resource__pos_table_ids
+msgid "POS Table"
+msgstr "Bàn POS"
+
+#. module: pos_restaurant_appointment
+#: model:ir.model,name:pos_restaurant_appointment.model_pos_config
+msgid "Point of Sale Configuration"
+msgstr "Cấu hình điểm bán hàng"
+
+#. module: pos_restaurant_appointment
+#: model:ir.model,name:pos_restaurant_appointment.model_pos_session
+msgid "Point of Sale Session"
+msgstr "Phiên POS"
+
+#. module: pos_restaurant_appointment
+#: model:ir.model.fields,field_description:pos_restaurant_appointment.field_calendar_event__answers
+msgid "Q&A answers"
+msgstr "Câu trả lời Q&A"
+
+#. module: pos_restaurant_appointment
+#: model_terms:appointment.type,message_intro:pos_restaurant_appointment.appointment_type_restaurant_table
+msgid ""
+"Reserve your table at our bistro and enjoy a delightful dining experience at"
+" your convenience."
+msgstr ""
+"Đặt bàn tại nhà hàng của chúng tôi và tận hưởng trải nghiệm ẩm thực tuyệt "
+"vời vào thời gian thuận tiện cho bạn."
+
+#. module: pos_restaurant_appointment
+#: model:ir.model,name:pos_restaurant_appointment.model_restaurant_table
+msgid "Restaurant Table"
+msgstr "Bàn nhà hàng"
+
+#. module: pos_restaurant_appointment
+#: model:appointment.type,name:pos_restaurant_appointment.appointment_type_restaurant_table
+msgid "Table"
+msgstr "Bàn"
+
+#. module: pos_restaurant_appointment
+#. odoo-javascript
+#: code:addons/pos_restaurant_appointment/static/src/app/gantt_overrides/gantt_renderer.js:0
+msgid "View"
+msgstr "Chế độ xem"
+
+#. module: pos_restaurant_appointment
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.calendar_event_view_form_gantt_booking_inherited_restaurant_appointment
+msgid "e.g. \"John Doe\""
+msgstr "VD: \"John Doe\""
+
+#. module: pos_restaurant_appointment
+#: model:appointment.question,placeholder:pos_restaurant_appointment.appointment_type_restaurant_table_question_allergies
+msgid "e.g. Vegetarian, Lactose Intolerant, ..."
+msgstr "VD: Ăn chay, Không dung nạp Lactose,..."
+
+#. module: pos_restaurant_appointment
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.calendar_event_view_gantt_booking_resource_inherited_restaurant_appointment
+msgid "for:"
+msgstr "cho:"
+
+#. module: pos_restaurant_appointment
+#: model_terms:ir.ui.view,arch_db:pos_restaurant_appointment.calendar_event_view_gantt_booking_resource_inherited_restaurant_appointment
+msgid "hours"
+msgstr "giờ"

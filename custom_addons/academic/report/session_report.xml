@@ -1,0 +1,30 @@
+<odoo>
+    <!-- 1. template: tampilan laporan -->
+    <template id="session_doc"> 
+        <t t-call="web.html_container"> 
+            <t t-foreach="docs" t-as="doc"> 
+                <t t-call="web.external_layout"> 
+                    <div class="page"> 
+                        <h2 t-field="doc.name"/> 
+                        <p t-field="doc.instructor_id"/> 
+                        <t t-foreach="doc.attendee_ids" t-as="a"> 
+                            <p t-field="a.partner_id"/> 
+                        </t> 
+                    </div> 
+                </t> 
+            </t> 
+        </t> 
+    </template>
+
+    <!-- 2. action: memunculkan tombol Print -->
+    <record id="report_session" model="ir.actions.report"> 
+        <field name="name">Session Report</field> 
+        <field name="model">academic.session</field> 
+        <field name="report_type">qweb-html</field> 
+        <field name="report_name">academic.session_doc</field> 
+        <field name="print_report_name">'Session - %s' % object.name</field> 
+        <field name="binding_model_id" ref="model_academic_session"/> 
+        <field name="binding_type">report</field> 
+    </record>
+
+</odoo>

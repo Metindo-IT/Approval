@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="0">
+        <!-- 1. Kategori harus dibuat paling atas -->
+        <record id="module_category_academic" model="ir.module.category">
+            <field name="name">Academic</field>
+            <field name="sequence">10</field>
+        </record>
+
+        <!-- 2. Group User dibuat setelah Kategori -->
+        <record id="group_user" model="res.groups">
+            <field name="name">User</field>
+            <field name="category_id" ref="module_category_academic"/>
+            <field name="implied_ids" eval="[(4, ref('base.group_user'))]"/>
+        </record>
+
+        <!-- 3. Group Manager dibuat paling bawah karena butuh referensi Kategori dan User -->
+        <record id="group_manager" model="res.groups">
+            <field name="name">Manager</field>
+            <field name="category_id" ref="module_category_academic"/>
+            <field name="implied_ids" eval="[(4, ref('group_user'))]"/>
+        </record>
+    </data>
+</odoo>

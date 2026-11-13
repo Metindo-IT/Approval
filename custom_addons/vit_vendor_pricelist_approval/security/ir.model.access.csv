@@ -1,0 +1,6 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_vendor_pricelist_approval_user,vendor.pricelist.approval.user,model_vendor_pricelist_approval,group_vendor_pricelist_user,1,1,1,0
+access_vendor_pricelist_approval_manager,vendor.pricelist.approval.manager,model_vendor_pricelist_approval,group_vendor_pricelist_manager,1,1,1,1
+access_vendor_pricelist_approval_internal,vendor.pricelist.approval.internal,model_vendor_pricelist_approval,base.group_user,1,1,0,0
+access_vendor_pricelist_approval_line_user,vendor.pricelist.approval.line.user,model_vendor_pricelist_approval_line,base.group_user,1,1,1,1
+access_vendor_pricelist_reject_wizard_user,vendor.pricelist.reject.wizard.user,model_vendor_pricelist_reject_wizard,base.group_user,1,1,1,1

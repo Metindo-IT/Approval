@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_pricelist_approval_form" model="ir.ui.view">
+            <field name="name">pricelist.approval.form</field>
+            <field name="model">pricelist.approval</field>
+            <field name="arch" type="xml">
+                <form>
+                    <header>
+                        <button name="action_submit" string="Ajukan ke Marketing" type="object" invisible="state != 'draft'" class="oe_highlight"/>
+                        <button name="action_approve" string="Approve &amp; Simpan Harga" type="object" invisible="state != 'waiting'" class="oe_highlight"/>
+                        <button name="action_reject" string="Reject" type="object" invisible="state != 'waiting'"/>
+                        <field name="state" widget="statusbar"/>
+                    </header>
+                    <sheet>
+                        <div class="oe_title">
+                            <h1><field name="name"/></h1>
+                        </div>
+                        <group>
+                            <group>
+                                <field name="product_tmpl_id"/>
+                                <field name="proposed_price"/>
+                            </group>
+                            <group>
+                                <field name="pricelist_id"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_pricelist_approval" model="ir.actions.act_window">
+            <field name="name">Pricelist Approvals</field>
+            <field name="res_model">pricelist.approval</field>
+            <field name="view_mode">list,form</field>
+        </record>
+
+        <!-- Menu Utama -->
+        <menuitem id="menu_pricelist_approval_root" name="Pricelist Approval" sequence="10"/>
+        <menuitem id="menu_pricelist_approval" name="Pengajuan Harga" parent="menu_pricelist_approval_root" action="action_pricelist_approval"/>
+    </data>
+</odoo>

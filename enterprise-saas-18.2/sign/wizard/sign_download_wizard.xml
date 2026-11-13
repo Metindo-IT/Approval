@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="sign_request_download_view_form" model="ir.ui.view">
+        <field name="name">sign.request.download.form</field>
+        <field name="model">sign.request.download</field>
+        <field name="arch" type="xml">
+            <form string="Sign Requests">
+                <div>
+                    <p>Some selected <a name="action_view_sign_requests" type="object"> documents </a> are unsigned and will not be downloaded.</p>
+                </div>
+                <footer>
+                    <button
+                        name="action_download_signed_documents"
+                        type="object"
+                        string="Download"
+                        class="btn-primary"
+                        data-hotkey="q"/>
+                    <button
+                        string="Cancel"
+                        class="btn-secondary"
+                        special="cancel"
+                        data-hotkey="x"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_view_sign_requests" model="ir.actions.act_window">
+        <field name="name">Confirmation</field>
+        <field name="res_model">sign.request.download</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+        <field name="view_id" ref="sign.sign_request_download_view_form"/>
+    </record>
+
+</odoo>

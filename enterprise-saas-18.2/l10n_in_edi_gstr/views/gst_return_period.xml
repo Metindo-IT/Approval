@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="l10n_in_gst_return_period_form_view" model="ir.ui.view">
+        <field name="name">l10n_in.gst.return.period.form.l10n_in_edi_gstr</field>
+        <field name="model">l10n_in.gst.return.period</field>
+        <field name="inherit_id" ref="l10n_in_reports.l10n_in_gst_return_period_form_view"/>
+        <field name="arch" type="xml">
+            <xpath expr="//ol[@id='gstr-headers']" position="before">
+                <div class="d-flex gap-2" invisible="not (l10n_in_gst_efiling_feature_enabled and l10n_in_edi_feature_enabled)">
+                    <label for="gstr1_include_einvoice" string="E-Invoice in GSTR-1"/>
+                    <div class="d-flex gap-1">
+                        <field name="gstr1_include_einvoice" widget="boolean_toggle" string="E-Invoice in GSTR-1" class="oe_inline"/>
+                        <span>
+                            <span invisible="gstr1_include_einvoice" class="text-muted">Exclude</span>
+                            <span invisible="not gstr1_include_einvoice" class="text-success">Include</span>
+                        </span>
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

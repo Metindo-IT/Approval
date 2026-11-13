@@ -1,0 +1,21 @@
+{
+    'name': "Vendor Pricelist Approval",
+    'summary': "Hard approval Purchasing → Marketing → Finance sebelum harga vendor aktif",
+    'author': "Iqbalasaleh [iqbalasaleh.com]",
+    'website': "http://www.vitraining.com",
+    'category': 'Inventory/Purchase',
+    'version': '1.0',
+    'depends': ['purchase', 'mail'],
+    'data': [
+        'security/security.xml',
+        'security/ir.model.access.csv',
+        'data/ir_sequence.xml',
+        'data/mail_activity_type.xml',
+        'data/ir_cron.xml',
+        'view/product_category.xml',
+        'view/product_supplierinfo.xml',
+        'view/vendor_pricelist_approval.xml',
+        'view/res_config_settings.xml',
+    ],
+    'license': 'LGPL-3',
+}

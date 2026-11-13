@@ -1,0 +1,545 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* l10n_cz_reports
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.2a1+e\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-06 14:59+0000\n"
+"PO-Revision-Date: 2025-02-06 14:59+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields,help:l10n_cz_reports.field_account_move_line__l10n_cz_transaction_code
+#: model:ir.model.fields,help:l10n_cz_reports.field_product_product__l10n_cz_transaction_code
+#: model:ir.model.fields,help:l10n_cz_reports.field_product_template__l10n_cz_transaction_code
+msgid ""
+"\n"
+"    Transaction code:\n"
+"    0 - Supply of goods to another Member State to a person registered for tax in another Member State (Section 13(1) and (2) of the Act)\n"
+"    1 - Transfer of business assets by the taxpayer to another Member State (Article 13(6) of the Act)\n"
+"    2 - Supply of goods within the territory of the European Community in the form of triangular trade (Section 17 of the Act), this code is to be filled in by the middle person only\n"
+"    3 - Supply of a service with a place of supply in another Member State (Article 9(1) of the Act), if the recipient of the service is obliged to declare and pay the tax\n"
+"    Required in the line not marked as cancellation line.\n"
+msgstr ""
+"\n"
+"    Kód plnění:\n"
+"    0 - dodání zboží do jiného členského státu osobě registrované k dani v jiném členském státě (§ 13 odst. 1 a 2 zákona)\n"
+"    1 - přemístění obchodního majetku plátcem do jiného členského státu (§ 13 odst. 6 zákona)\n"
+"    2 - dodání zboží uvnitř území Evropského společenství formou třístranného obchodu (§ 17 zákona), tento kód vyplňuje pouze prostřední osoba\n"
+"    3 - poskytnutí služby s místem plnění v jiném členském státu (§ 9 odst. 1 zákona), pokud je povinen přiznat a zaplatit daň příjemce služby\n"
+"    Povinné v řádku, který není označen jako storno řádek.\n"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__account_move__l10n_cz_scheme_code__0
+msgid "0 - Standard VAT regime"
+msgstr "0 – běžné plnění"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__account_move_line__l10n_cz_transaction_code__0
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__product_template__l10n_cz_transaction_code__0
+msgid "0 Goods"
+msgstr "0 Zboží"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__account_move__l10n_cz_scheme_code__1
+msgid "1 - Section 89 of VAT Act special scheme for a travel service"
+msgstr "1 - § 89 – zvláštní režim pro cestovní službu"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__account_move_line__l10n_cz_transaction_code__1
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__product_template__l10n_cz_transaction_code__1
+msgid "1 Business asset"
+msgstr "1 Obchodní majetek"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__account_move__l10n_cz_scheme_code__2
+msgid "2 - Section 90 of VAT Act margin scheme"
+msgstr "2 - § 90 – zvláštní režim pro použité zboží"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__account_move_line__l10n_cz_transaction_code__2
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__product_template__l10n_cz_transaction_code__2
+msgid "2 Triangular"
+msgstr "2 Trojúhelníkové"
+
+#. module: l10n_cz_reports
+#: model:account.report.line,name:l10n_cz_reports.l10n_cz_reports_bs_aktiva_b_I_2_1
+msgid "2.1. Software"
+msgstr ""
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__account_move_line__l10n_cz_transaction_code__3
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__product_template__l10n_cz_transaction_code__3
+msgid "3 Service"
+msgstr "3 Služba"
+
+#. module: l10n_cz_reports
+#: model:account.report.line,name:l10n_cz_reports.control_statement_A
+msgid "A. Transactions in the domestic reverse charge regime"
+msgstr "A. Transakce v tuzemském režimu přenesení daňové povinnosti"
+
+#. module: l10n_cz_reports
+#: model:account.report.line,name:l10n_cz_reports.control_statement_C5
+msgid "A.1 Total tax base"
+msgstr "A.1 celkem základy daně"
+
+#. module: l10n_cz_reports
+#: model:account.report.line,name:l10n_cz_reports.control_statement_A1
+msgid "A.1. Realized taxable supplies in the domestic reverse charge regime"
+msgstr ""
+"A.1. Uskutečněná zdanitelná plnění v tuzemském režimu přenesení daňové "
+"povinnosti"
+
+#. module: l10n_cz_reports
+#: model:account.report.line,name:l10n_cz_reports.control_statement_A2
+msgid "A.2. Received taxable supplies"
+msgstr "A.2. Přijatá zdanitelná plnění"
+
+#. module: l10n_cz_reports
+#: model:account.report.line,name:l10n_cz_reports.control_statement_C8
+msgid "A.2. Total tax bases"
+msgstr "A.2 celkem základy daně"
+
+#. module: l10n_cz_reports
+#: model:account.report.line,name:l10n_cz_reports.control_statement_A3
+msgid "A.3. Realized supplies in the special regime of investment gold"
+msgstr "A.3. Realizované dodávky ve speciálním režimu investičního zlata"
+
+#. module: l10n_cz_reports
+#: model:account.report.line,name:l10n_cz_reports.control_statement_C1
+msgid "A.4. + A.5. Total tax bases at the basic VAT rate"
+msgstr "A.4. + A.5. celkem základy daně u základní sazby DPH"
+
+#. module: l10n_cz_reports
+#: model:account.report.line,name:l10n_cz_reports.control_statement_C2
+msgid "A.4. + A.5. Total tax bases at the reduced VAT rate"
+msgstr "A.4. + A.5. celkem základy daně u snížené sazby"
+
+#. module: l10n_cz_reports
+#: model:account.report.line,name:l10n_cz_reports.control_statement_A4
+msgid "A.4. Realized taxable supplies and received payments above CZK 10,000"
+msgstr "A.4. Realizovaná zdanitelná plnění a přijaté platby nad 10.000,- Kč "
+
+#. module: l10n_cz_reports
+#: model:account.report.line,name:l10n_cz_reports.control_statement_A5
+msgid ""
+"A.5. Other realized taxable supplies and received payments up to CZK 10,000"
+msgstr ""
+"A.5. Ostatní uskutečněná zdanitelná plnění a přijatá plnění do 10.000,- Kč"
+
+#. module: l10n_cz_reports
+#: model:ir.model,name:l10n_cz_reports.model_account_chart_template
+msgid "Account Chart Template"
+msgstr "Šablona schématu účtu"
+
+#. module: l10n_cz_reports
+#: model:account.report.line,name:l10n_cz_reports.control_statement_B
+msgid "B. Received taxable supplies with the place of supply in the country"
+msgstr "B. Přijatá zdanitelná plnění s místem plnění v tuzemsku"
+
+#. module: l10n_cz_reports
+#: model:account.report.line,name:l10n_cz_reports.vies_summary_report_line
+msgid "B. SECTION"
+msgstr "B. ODDÍL"
+
+#. module: l10n_cz_reports
+#: model:account.report.line,name:l10n_cz_reports.control_statement_B1
+msgid "B.1. Received taxable supplies in the domestic reverse charge regime"
+msgstr ""
+"B.1. Přijatá zdanitelná plnění v tuzemském režimu přenesení daňové "
+"povinnosti"
+
+#. module: l10n_cz_reports
+#: model:account.report.line,name:l10n_cz_reports.control_statement_C6
+msgid "B.1. Total tax bases at the basic VAT rate"
+msgstr "B.1 celkem základy daně u základní sazby DPH"
+
+#. module: l10n_cz_reports
+#: model:account.report.line,name:l10n_cz_reports.control_statement_C7
+msgid "B.1. Total tax bases at the reduced VAT rate"
+msgstr "B.1. celkem základy daně u snížené sazby DPH"
+
+#. module: l10n_cz_reports
+#: model:account.report.line,name:l10n_cz_reports.control_statement_C3
+msgid "B.2. + B.3. Total tax bases at the basic VAT rate"
+msgstr "B.2. + B.3. celkem základy daně u základní sazby DPH"
+
+#. module: l10n_cz_reports
+#: model:account.report.line,name:l10n_cz_reports.control_statement_C4
+msgid "B.2. + B.3. Total tax bases at the reduced VAT rate"
+msgstr "B.2. + B.3. celkem základy daně u snížené sazby DPH"
+
+#. module: l10n_cz_reports
+#: model:account.report.line,name:l10n_cz_reports.control_statement_B2
+msgid "B.2. Received taxable supplies and provided payments above CZK 10,000"
+msgstr "B.2. Přijatá zdanitelná plnění a poskytnuté platby nad 10.000,- Kč"
+
+#. module: l10n_cz_reports
+#: model:account.report.line,name:l10n_cz_reports.control_statement_B3
+msgid "B.3. Received taxable supplies and provided payments up to CZK 10,000"
+msgstr "B.3. Přijatá zdanitelná plnění a poskytnuté platby do 10.000,- Kč"
+
+#. module: l10n_cz_reports
+#: model:account.report.line,name:l10n_cz_reports.control_statement_C
+msgid "C. Control lines towards VAT return"
+msgstr "C. Kontrolní řádky na Daňové přiznání k DPH (DaP)"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__account_move_line__l10n_cz_supplies_code__12
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__product_template__l10n_cz_supplies_code__12
+msgid "Cereals and technical crops"
+msgstr "Obiloviny a technické plodiny"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields,help:l10n_cz_reports.field_account_bank_statement_line__l10n_cz_scheme_code
+#: model:ir.model.fields,help:l10n_cz_reports.field_account_move__l10n_cz_scheme_code
+msgid ""
+"Code indicating special scheme, optionally used for VAT control report."
+msgstr "Kód označující zvláštní režim, potřebný pro kontrolní hlášení DPH."
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields,field_description:l10n_cz_reports.field_account_move_line__l10n_cz_supplies_code
+#: model:ir.model.fields,field_description:l10n_cz_reports.field_product_product__l10n_cz_supplies_code
+#: model:ir.model.fields,field_description:l10n_cz_reports.field_product_template__l10n_cz_supplies_code
+msgid "Code of Supply"
+msgstr "Kód předmětu plnění"
+
+#. module: l10n_cz_reports
+#: model:account.report.column,name:l10n_cz_reports.control_statement_supplies_code
+msgid "Code of subject of supply"
+msgstr "Kód předmětu plnění"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields,help:l10n_cz_reports.field_account_move_line__l10n_cz_supplies_code
+#: model:ir.model.fields,help:l10n_cz_reports.field_product_product__l10n_cz_supplies_code
+#: model:ir.model.fields,help:l10n_cz_reports.field_product_template__l10n_cz_supplies_code
+msgid "Code of subject of supply in the domestic reverse charge regime."
+msgstr "Kód předmětu plnění v tuzemském režimu přenesení daňové povinnosti."
+
+#. module: l10n_cz_reports
+#. odoo-python
+#: code:addons/l10n_cz_reports/models/l10n_cz_reports_utils.py:0
+msgid "Company: %s"
+msgstr "Společnost: %s"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__account_move_line__l10n_cz_supplies_code__4
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__product_template__l10n_cz_supplies_code__4
+msgid "Construction and assembly work"
+msgstr "Stavební a montážní práce"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__account_move_line__l10n_cz_supplies_code__4a
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__product_template__l10n_cz_supplies_code__4a
+msgid "Construction and assembly work - provision of workers"
+msgstr "Stavební a montážní práce – poskytnutí pracovníků"
+
+#. module: l10n_cz_reports
+#: model:account.report.column,name:l10n_cz_reports.control_statement_country_code
+#: model:account.report.column,name:l10n_cz_reports.vies_summary_report_country_code
+msgid "Country Code"
+msgstr "Kód země"
+
+#. module: l10n_cz_reports
+#: model_terms:ir.ui.view,arch_db:l10n_cz_reports.view_product_template_form
+msgid "Czech Accounting"
+msgstr "České účetnictví"
+
+#. module: l10n_cz_reports
+#: model:ir.model,name:l10n_cz_reports.model_l10n_cz_vat_control_report_handler
+msgid "Czech Report Custom Handler (Control Statement)"
+msgstr "Česká zpráva Custom Handler (kontrolní výkaz)"
+
+#. module: l10n_cz_reports
+#: model:ir.model,name:l10n_cz_reports.model_l10n_cz_vies_summary_report_handler
+msgid "Czech Report Custom Handler (VIES Summary)"
+msgstr "Souhrnné hlášení VIES vlastní obslužná rutina"
+
+#. module: l10n_cz_reports
+#: model:ir.ui.menu,name:l10n_cz_reports.account_reports_cz_statements_menu
+msgid "Czech Republic"
+msgstr "Česká republika"
+
+#. module: l10n_cz_reports
+#: model:ir.model,name:l10n_cz_reports.model_l10n_cz_tax_report_handler
+msgid "Czech Tax Report Custom Handler"
+msgstr "Český daňový výkaz Custom Handler"
+
+#. module: l10n_cz_reports
+#: model:account.report.column,name:l10n_cz_reports.control_statement_taxable_supply_date
+msgid "Date of taxable supply/of obligation to declare"
+msgstr ""
+"Data uskutečnění zdanitelného plnění (DUZP)/data povinnosti přiznat daň "
+"(DPPD)"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__account_move_line__l10n_cz_supplies_code__18
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__product_template__l10n_cz_supplies_code__18
+msgid "Delivery of electricity certificates"
+msgstr "Dodání certifikátů elektřiny"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__account_move_line__l10n_cz_supplies_code__20
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__product_template__l10n_cz_supplies_code__20
+msgid "Delivery of gas through systems or networks to the trader"
+msgstr "Dodání plynu soustavami nebo sítěmi obchodníkov"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__account_move_line__l10n_cz_supplies_code__7
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__product_template__l10n_cz_supplies_code__7
+msgid "Delivery of goods after transfer of retention of title"
+msgstr "Dodání zboží po postoupení výhrady vlastnictví"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__account_move_line__l10n_cz_supplies_code__6
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__product_template__l10n_cz_supplies_code__6
+msgid "Delivery of goods originally provided as a guarantee"
+msgstr "Dodání zboží poskytnutého původně jako záruka"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__account_move_line__l10n_cz_supplies_code__3a
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__product_template__l10n_cz_supplies_code__3a
+msgid "Delivery of immovable property in forced sale"
+msgstr "Dodání nemovité věci v nuceném prodeji"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__account_move_line__l10n_cz_supplies_code__3
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__product_template__l10n_cz_supplies_code__3
+msgid "Delivery of immovable property, if tax is applied to this delivery"
+msgstr "Dodání nemovité věci"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields,field_description:l10n_cz_reports.field_account_chart_template__display_name
+#: model:ir.model.fields,field_description:l10n_cz_reports.field_account_move__display_name
+#: model:ir.model.fields,field_description:l10n_cz_reports.field_account_move_line__display_name
+#: model:ir.model.fields,field_description:l10n_cz_reports.field_account_tax__display_name
+#: model:ir.model.fields,field_description:l10n_cz_reports.field_l10n_cz_tax_report_handler__display_name
+#: model:ir.model.fields,field_description:l10n_cz_reports.field_l10n_cz_vat_control_report_handler__display_name
+#: model:ir.model.fields,field_description:l10n_cz_reports.field_l10n_cz_vies_summary_report_handler__display_name
+#: model:ir.model.fields,field_description:l10n_cz_reports.field_product_template__display_name
+msgid "Display Name"
+msgstr "Zobrazované jméno"
+
+#. module: l10n_cz_reports
+#. odoo-python
+#: code:addons/l10n_cz_reports/models/l10n_cz_reports_utils.py:0
+msgid "Go to Company"
+msgstr "Přejít na společnost"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__account_move_line__l10n_cz_supplies_code__1
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__product_template__l10n_cz_supplies_code__1
+msgid "Gold"
+msgstr "Zlato"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__account_move_line__l10n_cz_supplies_code__1a
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__product_template__l10n_cz_supplies_code__1a
+msgid "Gold - brokering the delivery of investment gold"
+msgstr "Zlato - zprostředkování dodání investičního zlata"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__account_move_line__l10n_cz_supplies_code__5
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__product_template__l10n_cz_supplies_code__5
+msgid "Goods listed in Appendix No. 5"
+msgstr "Zboží uvedené v příloze č. 5"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields,field_description:l10n_cz_reports.field_account_chart_template__id
+#: model:ir.model.fields,field_description:l10n_cz_reports.field_account_move__id
+#: model:ir.model.fields,field_description:l10n_cz_reports.field_account_move_line__id
+#: model:ir.model.fields,field_description:l10n_cz_reports.field_account_tax__id
+#: model:ir.model.fields,field_description:l10n_cz_reports.field_l10n_cz_tax_report_handler__id
+#: model:ir.model.fields,field_description:l10n_cz_reports.field_l10n_cz_vat_control_report_handler__id
+#: model:ir.model.fields,field_description:l10n_cz_reports.field_l10n_cz_vies_summary_report_handler__id
+#: model:ir.model.fields,field_description:l10n_cz_reports.field_product_template__id
+msgid "ID"
+msgstr ""
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields,help:l10n_cz_reports.field_account_tax__l10n_cz_reverse_charge
+msgid "Indicates if the tax is to be used with reverse charge transactions"
+msgstr ""
+"Označuje, zda se má daň použít u transakcí s přenesením daňové povinnosti"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__account_move_line__l10n_cz_supplies_code__15
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__product_template__l10n_cz_supplies_code__15
+msgid "Integrated circuits"
+msgstr "Integrované obvody"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields,field_description:l10n_cz_reports.field_account_move_line__is_reverse_charge
+msgid "Is Reverse Charge"
+msgstr "Jedná se o reverse charge"
+
+#. module: l10n_cz_reports
+#: model:ir.model,name:l10n_cz_reports.model_account_move
+msgid "Journal Entry"
+msgstr "Položka deníku"
+
+#. module: l10n_cz_reports
+#: model:ir.model,name:l10n_cz_reports.model_account_move_line
+msgid "Journal Item"
+msgstr "Položka deníku"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__account_move_line__l10n_cz_supplies_code__13
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__product_template__l10n_cz_supplies_code__13
+msgid "Metals"
+msgstr "Kovy"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__account_move_line__l10n_cz_supplies_code__14
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__product_template__l10n_cz_supplies_code__14
+msgid "Mobile Phones"
+msgstr "Mobilní telefony"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__account_move_line__l10n_cz_supplies_code__11
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__product_template__l10n_cz_supplies_code__11
+msgid "Permits for emissions according to Section 92f of the VAT Act"
+msgstr "Povolenky na emise skleníkových plynů"
+
+#. module: l10n_cz_reports
+#. odoo-python
+#: code:addons/l10n_cz_reports/models/l10n_cz_reports_utils.py:0
+msgid "Please first set a tax office and tax ID on your company."
+msgstr ""
+"Nejprve si prosím nastavte daňový úřad a daňové identifikační číslo vaší "
+"společnosti."
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__account_move_line__l10n_cz_supplies_code__16
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__product_template__l10n_cz_supplies_code__16
+msgid "Portable devices for automated data processing"
+msgstr "Přenosná zařízení pro automatizované zpracování dat"
+
+#. module: l10n_cz_reports
+#: model:ir.model,name:l10n_cz_reports.model_product_template
+msgid "Product"
+msgstr "Produkt"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__account_move_line__l10n_cz_supplies_code__21
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__product_template__l10n_cz_supplies_code__21
+msgid "Provision of defined electronic communications services"
+msgstr "Poskytnutí vymezených služeb elektronických komunikací"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields,field_description:l10n_cz_reports.field_account_tax__l10n_cz_reverse_charge
+msgid "Reverse Charge Tax"
+msgstr "Přenesení daňové povinnosti"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields,field_description:l10n_cz_reports.field_account_bank_statement_line__l10n_cz_scheme_code
+#: model:ir.model.fields,field_description:l10n_cz_reports.field_account_move__l10n_cz_scheme_code
+msgid "Special scheme code"
+msgstr "Kód režimu plnění - Zvláštní režim"
+
+#. module: l10n_cz_reports
+#: model:account.report.column,name:l10n_cz_reports.vies_summary_report_supplies_code
+msgid "Supplies code"
+msgstr "Kód plnění"
+
+#. module: l10n_cz_reports
+#: model:account.report.column,name:l10n_cz_reports.vies_summary_report_supplies_number
+msgid "Supplies number"
+msgstr "Počet plnění"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__account_move_line__l10n_cz_supplies_code__19
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__product_template__l10n_cz_supplies_code__19
+msgid "Supply of electricity through systems or networks to a trader"
+msgstr "Dodání elektřiny soustavami nebo sítěmi obchodníkovi"
+
+#. module: l10n_cz_reports
+#: model:ir.model,name:l10n_cz_reports.model_account_tax
+msgid "Tax"
+msgstr "Daň"
+
+#. module: l10n_cz_reports
+#: model:account.report.column,name:l10n_cz_reports.control_statement_tax_1
+msgid "Tax amount (basic VAT rate)"
+msgstr "Částka daně (základní sazba DPH)"
+
+#. module: l10n_cz_reports
+#: model:account.report.column,name:l10n_cz_reports.control_statement_tax_2
+msgid "Tax amount (reduced VAT rate)"
+msgstr "Částka daně (snížená sazba DPH)"
+
+#. module: l10n_cz_reports
+#: model:account.report.column,name:l10n_cz_reports.control_statement_tax_base_1
+msgid "Tax base (basic VAT rate)"
+msgstr "Základ daně (základní sazba DPH)"
+
+#. module: l10n_cz_reports
+#: model:account.report.column,name:l10n_cz_reports.control_statement_tax_base_2
+msgid "Tax base (reduced VAT rate)"
+msgstr "Základ daně (snížená sazba DPH)"
+
+#. module: l10n_cz_reports
+#: model:account.report.column,name:l10n_cz_reports.control_statement_journal_entry
+msgid "Tax document registration number"
+msgstr "Evidenční číslo daňového dokladu"
+
+#. module: l10n_cz_reports
+#: model:account.report.column,name:l10n_cz_reports.vies_summary_report_total_value
+msgid "Total value"
+msgstr "Hodnota plnění"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields,field_description:l10n_cz_reports.field_account_move_line__l10n_cz_transaction_code
+#: model:ir.model.fields,field_description:l10n_cz_reports.field_product_product__l10n_cz_transaction_code
+#: model:ir.model.fields,field_description:l10n_cz_reports.field_product_template__l10n_cz_transaction_code
+msgid "Transaction code"
+msgstr "Kód transakce"
+
+#. module: l10n_cz_reports
+#: model:account.report.column,name:l10n_cz_reports.control_statement_vat_number
+msgid "VAT"
+msgstr "DPH"
+
+#. module: l10n_cz_reports
+#: model:account.report,name:l10n_cz_reports.control_statement_report
+msgid "VAT Control Statement"
+msgstr "Kontrolní hlášení DPH"
+
+#. module: l10n_cz_reports
+#: model:account.report.column,name:l10n_cz_reports.vies_summary_report_vat_number
+msgid "VAT number"
+msgstr "DIČ pořizovatele zboží"
+
+#. module: l10n_cz_reports
+#: model:account.report,name:l10n_cz_reports.vies_summary_report
+#: model:ir.actions.client,name:l10n_cz_reports.action_vies_summary_report
+#: model:ir.ui.menu,name:l10n_cz_reports.menu_action_vies_summary_report
+msgid "VIES summary report"
+msgstr "Souhrnné hlášení VIES přesun řádků"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__account_move_line__l10n_cz_supplies_code__17
+#: model:ir.model.fields.selection,name:l10n_cz_reports.selection__product_template__l10n_cz_supplies_code__17
+msgid "Video game console"
+msgstr "Videoherní konzole"
+
+#. module: l10n_cz_reports
+#: model:ir.model.fields,help:l10n_cz_reports.field_account_move_line__is_reverse_charge
+msgid "Whether line contains a tax related to reverse charge transactions"
+msgstr ""
+"Zda řádek obsahuje daň související s transakcemi přenesení daňové povinnosti"
+
+#. module: l10n_cz_reports
+#. odoo-python
+#: code:addons/l10n_cz_reports/models/l10n_cz_vat_control_handler.py:0
+#: code:addons/l10n_cz_reports/models/l10n_cz_vies_summary_handler.py:0
+#: code:addons/l10n_cz_reports/models/tax_report_handler.py:0
+msgid "XML"
+msgstr ""

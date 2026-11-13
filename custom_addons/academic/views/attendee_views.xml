@@ -1,0 +1,49 @@
+<odoo>
+
+    <!-- 1. list view -->
+    <record id="view_academic_attendee_list" model="ir.ui.view">
+        <field name="name">academic.attendee.list</field>
+        <field name="model">academic.attendee</field> 
+        <field name="type">list</field> 
+        <field name="priority" eval="8"/> 
+        <field name="arch" type="xml"> 
+            <list> 
+                <field name="partner_id"/> 
+                <field name="session_id"/> 
+                <field name="name"/> 
+            </list> 
+        </field> 
+    </record>
+
+    <!-- 2. form view -->
+    <record id="view_academic_attendee_form" model="ir.ui.view"> 
+        <field name="name">academic.attendee.form</field> 
+        <field name="model">academic.attendee</field> 
+        <field name="type">form</field> 
+        <field name="priority" eval="8"/> 
+        <field name="arch" type="xml"> 
+            <form> 
+                <sheet> 
+                    <div class="oe_title"> 
+                        <label for="partner_id" class="oe_edit_only" string="Attendee"/> 
+                            <h1>
+                                <field name="partner_id"/>
+                            </h1> 
+                    </div> 
+                    <group> 
+                        <field name="session_id"/> 
+                        <field name="name"/> 
+                    </group> 
+                </sheet> 
+            </form> 
+        </field> 
+    </record>
+
+    <!-- 3. action -->
+    <record id="action_attendee_list" model="ir.actions.act_window"> 
+        <field name="name">Attendees</field> 
+        <field name="res_model">academic.attendee</field> 
+        <field name="view_mode">list,form</field> 
+    </record>
+    
+</odoo>

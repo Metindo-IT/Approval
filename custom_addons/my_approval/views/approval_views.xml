@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="view_my_approval_tree" model="ir.ui.view">
+        <field name="name">my.approval.tree</field>
+        <field name="model">my.approval</field>
+        <field name="arch" type="xml">
+            <list string="Approvals">
+                <field name="name"/>
+                <field name="amount"/>
+                <field name="state"/>
+            </list>
+        </field>
+    </record>
+
+    <record id="view_my_approval_form" model="ir.ui.view">
+        <field name="name">my.approval.form</field>
+        <field name="model">my.approval</field>
+        <field name="arch" type="xml">
+            <form string="Approval">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="amount"/>
+                        <field name="state"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_my_approval" model="ir.actions.act_window">
+        <field name="name">My Approvals</field>
+        <field name="res_model">my.approval</field>
+        <field name="view_mode">list,form</field>
+    </record>
+
+    <menuitem id="menu_my_approval_root" name="My Approval" sequence="10"/>
+    <menuitem id="menu_my_approval_sub" name="Approvals" parent="menu_my_approval_root" action="action_my_approval" sequence="10"/>
+</xml>

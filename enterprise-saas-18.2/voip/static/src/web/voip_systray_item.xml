@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<templates>
+    <t t-name="voip.SystrayItem">
+        <!-- This div is needed for the style of systray items to apply properly -->
+        <div>
+            <button t-att-class="shouldDisplayInCallIndicator ? 'btn btn-success btn-sm' : 'o_nav_entry'" t-att-title="titleText" t-on-click="onClick">
+                <i class="oi oi-large oi-voip" t-att-class="{ 'o-voip-SystrayItem-vibrate': userAgent.hasCallInvitation and !softphone.isDisplayed }"/>
+                <span t-if="missedCallCount" class="badge rounded-pill" t-esc="missedCallCount"/>
+                <t t-if="shouldDisplayInCallIndicator"> In call</t>
+            </button>
+        </div>
+    </t>
+</templates>

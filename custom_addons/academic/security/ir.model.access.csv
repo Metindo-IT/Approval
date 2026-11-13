@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_course_user,course.user,model_academic_course,academic.group_user,1,0,0,0
+access_course_manager,course.manager,model_academic_course,academic.group_manager,1,1,1,1
+access_session_user,session.user,model_academic_session,academic.group_user,1,1,1,0
+access_session_manager,session.manager,model_academic_session,academic.group_manager,1,1,1,1
+access_attendee_user,attendee.user,model_academic_attendee,academic.group_user,1,1,1,1
+access_wizard_user,wizard.user,model_academic_wizard,group_user,1,1,1,0
